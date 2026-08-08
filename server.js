@@ -231,16 +231,50 @@ app.get('/api/topics', (req, res) => {
 // Get questions
 app.get('/api/questions', (req, res) => {
   try {
-    const { topic_id, limit = 10 } = req.query;
+    const { topic_id, limit = 10, weighted = false } = req.query;
     let filteredQuestions = questionsData.questions;
 
     if (topic_id) {
       filteredQuestions = filteredQuestions.filter(q => q.topic_id === topic_id);
     }
 
-    // Shuffle and limit
-    const shuffled = filteredQuestions.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, parseInt(limit));
+    let selected;
+    if (weighted === 'true' && !topic_id) {
+      // Weighted distribution based on exam weights
+      const weights = {
+        'topic_1': 0.16,  // 16%
+        'topic_2': 0.44,  // 44%
+        'topic_3': 0.31,  // 31%
+        'topic_4': 0.09   // 9%
+      };
+      
+      selected = [];
+      const totalLimit = parseInt(limit);
+      
+      Object.entries(weights).forEach(([topic, weight]) => {
+        const topicQuestions = questionsData.questions.filter(q => q.topic_id === topic);
+        const topicCount = Math.round(totalLimit * weight);
+        const shuffled = topicQuestions.sort(() => 0.5 - Math.random());
+        selected.push(...shuffled.slice(0, topicCount));
+      });
+      
+      // Fill remaining slots if rounding caused shortage
+      if (selected.length < totalLimit) {
+        const remaining = totalLimit - selected.length;
+        const allShuffled = questionsData.questions.sort(() => 0.5 - Math.random());
+        const selectedIds = new Set(selected.map(q => q.id));
+        for (const q of allShuffled) {
+          if (!selectedIds.has(q.id)) {
+            selected.push(q);
+            if (selected.length >= totalLimit) break;
+          }
+        }
+      }
+    } else {
+      // Random selection
+      const shuffled = filteredQuestions.sort(() => 0.5 - Math.random());
+      selected = shuffled.slice(0, parseInt(limit));
+    }
 
     res.json(selected);
   } catch (error) {

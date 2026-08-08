@@ -381,7 +381,8 @@
 
     <!-- Practice Screen -->
     <div id="practice-screen" class="screen">
-      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <button class="back-btn" onclick="stopTestTimer(); showMenu()">← Назад</button>
+      <div id="test-timer" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #3b82f6;"></div>
       <div id="practice-content"></div>
     </div>
 
@@ -551,7 +552,7 @@
     }
 
     async function startFullTest() {
-      const questions = await apiGet('/api/questions?limit=75');
+      const questions = await apiGet('/api/questions?limit=75&weighted=true');
       if (!questions || questions.length === 0) {
         alert('Вопросы не найдены');
         return;
@@ -559,8 +560,55 @@
       currentQuestions = questions;
       currentQuestionIndex = 0;
       correctAnswers = 0;
+      
+      // Start timer for 105 minutes
+      startTestTimer(105 * 60);
+      
       showScreen('practice-screen');
       showQuestion();
+    }
+
+    let testTimer = null;
+    let timeRemaining = 0;
+
+    function startTestTimer(seconds) {
+      timeRemaining = seconds;
+      updateTimerDisplay();
+      
+      if (testTimer) clearInterval(testTimer);
+      
+      testTimer = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+        
+        if (timeRemaining <= 0) {
+          clearInterval(testTimer);
+          alert('Время вышло! Тест завершается.');
+          showResult();
+        }
+        
+        // Warning at 5 minutes
+        if (timeRemaining === 300) {
+          alert('️ Осталось 5 минут!');
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const minutes = Math.floor(timeRemaining / 60);
+      const seconds = timeRemaining % 60;
+      const timerEl = document.getElementById('test-timer');
+      if (timerEl) {
+        timerEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        timerEl.style.color = timeRemaining < 300 ? '#ef4444' : '#3b82f6';
+      }
+    }
+
+    function stopTestTimer() {
+      if (testTimer) {
+        clearInterval(testTimer);
+        testTimer = null;
+      }
     }
 
     async function showMistakes() {
@@ -642,10 +690,11 @@
     }
 
     function showResult() {
+      stopTestTimer();
       const percentage = Math.round((correctAnswers / currentQuestions.length) * 100);
       document.getElementById('result-score').textContent = `${percentage}%`;
       document.getElementById('result-label').textContent =
-        percentage >= 70 ? '✅ Отличный результат! Вы готовы к экзамену!' : '📚 Продолжайте тренироваться';
+        percentage >= 70 ? '✅ Отличный результат! Вы готовы к экзамену!' : ' Продолжайте тренироваться';
       showScreen('result-screen');
     }
 

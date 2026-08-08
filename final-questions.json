@@ -1,0 +1,939 @@
+{
+  "final_questions": [
+    {
+      "id": "q066",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is the difference between NYSE and NASDAQ?",
+      "question_ru": "В чем разница между NYSE и NASDAQ?",
+      "options": [
+        "NYSE is an auction market with a physical trading floor; NASDAQ is a dealer market with electronic trading",
+        "NYSE only trades bonds; NASDAQ only trades stocks",
+        "NYSE is for foreign stocks; NASDAQ is for U.S. stocks",
+        "There is no difference"
+      ],
+      "correct_answer": 0,
+      "explanation": "NYSE (New York Stock Exchange) is an auction market where buyers and sellers meet on a physical trading floor. NASDAQ is a dealer market where market makers provide liquidity through electronic networks.",
+      "explanation_ru": "NYSE (Нью-Йоркская фондовая биржа) — это аукционный рынок, где покупатели и продавцы встречаются на физическом торговом зале. NASDAQ — это дилерский рынок, где маркет-мейкеры обеспечивают ликвидность через электронные сети.",
+      "difficulty": 2
+    },
+    {
+      "id": "q067",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_2",
+      "question": "What is a market maker?",
+      "question_ru": "Что такое маркет-мейкер?",
+      "options": [
+        "A person who creates new securities",
+        "A dealer who stands ready to buy and sell securities at quoted prices",
+        "A government regulator",
+        "An investor who only buys stocks"
+      ],
+      "correct_answer": 1,
+      "explanation": "A market maker is a dealer who stands ready to buy and sell securities at publicly quoted prices. They provide liquidity to the market by maintaining an inventory of securities.",
+      "explanation_ru": "Маркет-мейкер — это дилер, который готов покупать и продавать ценные бумаги по публично объявленным ценам. Они обеспечивают ликвидность рынка, поддерживая инвентарь ценных бумаг.",
+      "difficulty": 2
+    },
+    {
+      "id": "q068",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What is the Federal Reserve's discount rate?",
+      "question_ru": "Что такое учетная ставка ФРС?",
+      "options": [
+        "The interest rate banks charge each other",
+        "The interest rate the Fed charges banks for short-term loans",
+        "The interest rate on government bonds",
+        "The inflation rate"
+      ],
+      "correct_answer": 1,
+      "explanation": "The discount rate is the interest rate the Federal Reserve charges commercial banks for short-term loans. It's one of the Fed's monetary policy tools.",
+      "explanation_ru": "Учетная ставка — это процентная ставка, которую ФРС взимает с коммерческих банков за краткосрочные кредиты. Это один из инструментов денежной политики ФРС.",
+      "difficulty": 2
+    },
+    {
+      "id": "q069",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What is the federal funds rate?",
+      "question_ru": "Что такое ставка федеральных фондов?",
+      "options": [
+        "The interest rate the government pays on its debt",
+        "The interest rate banks charge each other for overnight loans",
+        "The mortgage interest rate",
+        "The savings account interest rate"
+      ],
+      "correct_answer": 1,
+      "explanation": "The federal funds rate is the interest rate at which banks lend reserves to each other overnight. The Fed targets this rate to implement monetary policy.",
+      "explanation_ru": "Ставка федеральных фондов — это процентная ставка, по которой банки предоставляют друг другу кредиты в резервах на одну ночь. ФРС устанавливает целевой показатель этой ставки для реализации денежной политики.",
+      "difficulty": 2
+    },
+    {
+      "id": "q070",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What are rights in securities?",
+      "question_ru": "Что такое права (rights) в ценных бумагах?",
+      "options": [
+        "Legal documents proving ownership",
+        "Short-term instruments giving shareholders the right to buy additional shares at a discount",
+        "Voting rights at shareholder meetings",
+        "Dividend payments"
+      ],
+      "correct_answer": 1,
+      "explanation": "Rights are short-term instruments (usually 30-60 days) issued by a company to existing shareholders, giving them the right to purchase additional shares at a discount before a public offering.",
+      "explanation_ru": "Права (rights) — это краткосрочные инструменты (обычно 30-60 дней), выпускаемые компанией для существующих акционеров, дающие им право приобрести дополнительные акции со скидкой перед публичным предложением.",
+      "difficulty": 2
+    },
+    {
+      "id": "q071",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What are warrants?",
+      "question_ru": "Что такое варранты?",
+      "options": [
+        "Legal documents for stock ownership",
+        "Long-term instruments giving the right to buy stock at a specific price",
+        "Government guarantees for stock purchases",
+        "Insurance policies for investments"
+      ],
+      "correct_answer": 1,
+      "explanation": "Warrants are long-term instruments (often years) that give the holder the right to buy a company's stock at a specific price. They are similar to call options but issued by the company itself.",
+      "explanation_ru": "Варранты — это долгосрочные инструменты (часто годы), которые дают держателю право купить акции компании по определенной цене. Они похожи на опционы колл, но выпускаются самой компанией.",
+      "difficulty": 2
+    },
+    {
+      "id": "q072",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a T-bill?",
+      "question_ru": "Что такое T-bill (казначейский вексель)?",
+      "options": [
+        "A long-term government bond",
+        "A short-term government security maturing in one year or less",
+        "A corporate bond",
+        "A municipal bond"
+      ],
+      "correct_answer": 1,
+      "explanation": "T-bills (Treasury bills) are short-term U.S. government securities with maturities of one year or less. They are sold at a discount and do not pay periodic interest.",
+      "explanation_ru": "T-bills (казначейские векселя) — это краткосрочные ценные бумаги правительства США со сроком погашения один год или менее. Они продаются со скидкой и не выплачивают периодические проценты.",
+      "difficulty": 1
+    },
+    {
+      "id": "q073",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a T-note?",
+      "question_ru": "Что такое T-note (казначейская нота)?",
+      "options": [
+        "A short-term security maturing in less than one year",
+        "A medium-term government security maturing in 2-10 years",
+        "A long-term bond maturing in more than 10 years",
+        "A corporate note"
+      ],
+      "correct_answer": 1,
+      "explanation": "T-notes (Treasury notes) are medium-term U.S. government securities with maturities ranging from 2 to 10 years. They pay interest every six months.",
+      "explanation_ru": "T-notes (казначейские ноты) — это среднесрочные ценные бумаги правительства США со сроком погашения от 2 до 10 лет. Они выплачивают проценты каждые шесть месяцев.",
+      "difficulty": 1
+    },
+    {
+      "id": "q074",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a T-bond?",
+      "question_ru": "Что такое T-bond (казначейская облигация)?",
+      "options": [
+        "A short-term security",
+        "A medium-term security",
+        "A long-term government bond maturing in more than 10 years",
+        "A corporate bond"
+      ],
+      "correct_answer": 2,
+      "explanation": "T-bonds (Treasury bonds) are long-term U.S. government securities with maturities greater than 10 years (typically 20 or 30 years). They pay interest every six months.",
+      "explanation_ru": "T-bonds (казначейские облигации) — это долгосрочные ценные бумаги правительства США со сроком погашения более 10 лет (обычно 20 или 30 лет). Они выплачивают проценты каждые шесть месяцев.",
+      "difficulty": 1
+    },
+    {
+      "id": "q075",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is a bull spread?",
+      "question_ru": "Что такое бычий спред?",
+      "options": [
+        "An options strategy that profits from declining prices",
+        "An options strategy that profits from rising prices",
+        "A strategy involving only stocks",
+        "A strategy with unlimited risk"
+      ],
+      "correct_answer": 1,
+      "explanation": "A bull spread is an options strategy that profits when the underlying asset's price rises. It involves buying a lower strike option and selling a higher strike option of the same type.",
+      "explanation_ru": "Бычий спред — это стратегия опционов, которая приносит прибыль при росте цены базового актива. Она включает покупку опциона с более низким страйком и продажу опциона с более высоким страйком того же типа.",
+      "difficulty": 3
+    },
+    {
+      "id": "q076",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is a bear spread?",
+      "question_ru": "Что такое медвежий спред?",
+      "options": [
+        "An options strategy that profits from rising prices",
+        "An options strategy that profits from declining prices",
+        "A strategy for bullish markets only",
+        "A strategy with no risk"
+      ],
+      "correct_answer": 1,
+      "explanation": "A bear spread is an options strategy that profits when the underlying asset's price falls. It involves buying a higher strike option and selling a lower strike option.",
+      "explanation_ru": "Медвежий спред — это стратегия опционов, которая приносит прибыль при падении цены базового актива. Она включает покупку опциона с более высоким страйком и продажу опциона с более низким страйком.",
+      "difficulty": 3
+    },
+    {
+      "id": "q077",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is a load fund?",
+      "question_ru": "Что такое фонд с нагрузкой (load fund)?",
+      "options": [
+        "A fund with no fees",
+        "A mutual fund that charges a sales commission",
+        "A fund that only invests in bonds",
+        "A fund with guaranteed returns"
+      ],
+      "correct_answer": 1,
+      "explanation": "A load fund is a mutual fund that charges a sales commission (load) when shares are purchased (front-end load) or sold (back-end load). No-load funds do not charge these commissions.",
+      "explanation_ru": "Фонд с нагрузкой (load fund) — это взаимный фонд, который взимает комиссию с продаж (нагрузку) при покупке акций (фронт-энд нагрузка) или продаже (бэк-энд нагрузка). Фонды без нагрузки не взимают эти комиссии.",
+      "difficulty": 2
+    },
+    {
+      "id": "q078",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is a 12b-1 fee?",
+      "question_ru": "Что такое комиссия 12b-1?",
+      "options": [
+        "A one-time purchase fee",
+        "An annual fee for marketing and distribution expenses",
+        "A management fee",
+        "A redemption fee"
+      ],
+      "correct_answer": 1,
+      "explanation": "A 12b-1 fee is an annual fee charged by some mutual funds to cover marketing and distribution expenses. It's named after the SEC rule that allows it.",
+      "explanation_ru": "Комиссия 12b-1 — это годовая комиссия, взимаемая некоторыми взаимными фондами для покрытия расходов на маркетинг и распространение. Она названа в честь правила SEC, которое ее разрешает.",
+      "difficulty": 2
+    },
+    {
+      "id": "q079",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_5",
+      "question": "What is a variable annuity?",
+      "question_ru": "Что такое переменная аннуитет?",
+      "options": [
+        "An insurance product with fixed payments",
+        "An investment product where payments vary based on investment performance",
+        "A government bond",
+        "A type of stock"
+      ],
+      "correct_answer": 1,
+      "explanation": "A variable annuity is an insurance contract where the payout varies based on the performance of underlying investment options (usually mutual funds). It offers tax-deferred growth.",
+      "explanation_ru": "Переменный аннуитет — это страховой контракт, где выплаты варьируются в зависимости от результатов базовых инвестиционных опционов (обычно взаимных фондов). Он предлагает отложенное от налогов рост.",
+      "difficulty": 2
+    },
+    {
+      "id": "q080",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_5",
+      "question": "What is variable life insurance?",
+      "question_ru": "Что такое переменное страхование жизни?",
+      "options": [
+        "Insurance with fixed premiums and death benefits",
+        "Life insurance where cash value varies based on investment performance",
+        "Term life insurance",
+        "Government life insurance"
+      ],
+      "correct_answer": 1,
+      "explanation": "Variable life insurance is a type of permanent life insurance where the cash value and sometimes death benefit vary based on the performance of underlying investment options.",
+      "explanation_ru": "Переменное страхование жизни — это вид постоянного страхования жизни, где денежная стоимость и иногда сумма смерти варьируются в зависимости от результатов базовых инвестиционных опционов.",
+      "difficulty": 2
+    },
+    {
+      "id": "q081",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a fill-or-kill order?",
+      "question_ru": "Что такое ордер fill-or-kill?",
+      "options": [
+        "An order that must be executed immediately in full or canceled",
+        "An order that remains open until canceled",
+        "An order for filling potholes",
+        "An order that executes partially"
+      ],
+      "correct_answer": 0,
+      "explanation": "A fill-or-kill (FOK) order must be executed immediately in its entirety or canceled. Partial execution is not allowed.",
+      "explanation_ru": "Ордер fill-or-kill (FOK) должен быть исполнен немедленно в полном объеме или отменен. Частичное исполнение не допускается.",
+      "difficulty": 2
+    },
+    {
+      "id": "q082",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is an immediate-or-cancel order?",
+      "question_ru": "Что такое ордер immediate-or-cancel?",
+      "options": [
+        "An order that must be filled immediately, with any unfilled portion canceled",
+        "An order that cancels all other orders",
+        "An order for immediate delivery",
+        "An order that never cancels"
+      ],
+      "correct_answer": 0,
+      "explanation": "An immediate-or-cancel (IOC) order must be executed immediately. Any portion that cannot be filled immediately is canceled. Partial execution is allowed.",
+      "explanation_ru": "Ордер immediate-or-cancel (IOC) должен быть исполнен немедленно. Любая часть, которая не может быть исполнена немедленно, отменяется. Частичное исполнение допускается.",
+      "difficulty": 2
+    },
+    {
+      "id": "q083",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is the minimum maintenance requirement for a margin account?",
+      "question_ru": "Каково минимальное требование поддержки для маржинального счета?",
+      "options": [
+        "25% of the market value",
+        "50% of the market value",
+        "75% of the market value",
+        "100% of the market value"
+      ],
+      "correct_answer": 0,
+      "explanation": "FINRA requires a minimum maintenance margin of 25% of the market value of securities in a margin account. Some brokers require higher percentages.",
+      "explanation_ru": "FINRA требует минимальную маржу поддержки 25% от рыночной стоимости ценных бумаг на маржинальном счете. Некоторые брокеры требуют более высокие проценты.",
+      "difficulty": 2
+    },
+    {
+      "id": "q084",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a 403(b) plan?",
+      "question_ru": "Что такое план 403(b)?",
+      "options": [
+        "A retirement plan for government employees",
+        "A retirement plan for employees of public schools and certain tax-exempt organizations",
+        "A plan for self-employed individuals",
+        "A plan for corporate executives"
+      ],
+      "correct_answer": 1,
+      "explanation": "A 403(b) plan is a retirement savings plan available to employees of public schools and certain tax-exempt organizations. It's similar to a 401(k) but for non-profit entities.",
+      "explanation_ru": "План 403(b) — это пенсионный накопительный план, доступный сотрудникам государственных школ и определенных некоммерческих организаций. Он похож на 401(k), но для некоммерческих организаций.",
+      "difficulty": 2
+    },
+    {
+      "id": "q085",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_3",
+      "question": "What is a corporate action?",
+      "question_ru": "Что такое корпоративное действие?",
+      "options": [
+        "A lawsuit against a corporation",
+        "An event initiated by a public company that affects its securities",
+        "A government regulation",
+        "A type of stock trade"
+      ],
+      "correct_answer": 1,
+      "explanation": "A corporate action is an event initiated by a public company that affects its securities, such as dividends, stock splits, mergers, or acquisitions.",
+      "explanation_ru": "Корпоративное действие — это событие, инициированное публичной компанией, которое влияет на ее ценные бумаги, такие как дивиденды, сплиты акций, слияния или поглощения.",
+      "difficulty": 2
+    },
+    {
+      "id": "q086",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_3",
+      "question": "What is a stock split?",
+      "question_ru": "Что такое сплит акций?",
+      "options": [
+        "When a company goes bankrupt",
+        "When a company increases the number of shares by dividing existing shares",
+        "When stock prices fall dramatically",
+        "When a company is acquired"
+      ],
+      "correct_answer": 1,
+      "explanation": "A stock split is when a company divides its existing shares into multiple shares to boost liquidity. For example, in a 2-for-1 split, each share becomes two shares at half the price.",
+      "explanation_ru": "Сплит акций — это когда компания делит существующие акции на несколько акций для повышения ликвидности. Например, при сплите 2-к-1 каждая акция становится двумя акциями по половине цены.",
+      "difficulty": 1
+    },
+    {
+      "id": "q087",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is front-running?",
+      "question_ru": "Что такое фронт-раннинг?",
+      "options": [
+        "Running a marathon",
+        "Trading based on advance knowledge of pending orders",
+        "Leading a company",
+        "Being first to invest"
+      ],
+      "correct_answer": 1,
+      "explanation": "Front-running is the illegal practice of trading on advance knowledge of pending orders from customers. For example, a broker buying stock before executing a large customer order that will drive up the price.",
+      "explanation_ru": "Фронт-раннинг — это незаконная практика торговли на основе предварительного знания о_pending_ заказах клиентов. Например, брокер покупает акции перед исполнением крупного заказа клиента, который поднимет цену.",
+      "difficulty": 2
+    },
+    {
+      "id": "q088",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is suitability in securities?",
+      "question_ru": "Что такое пригодность (suitability) в ценных бумагах?",
+      "options": [
+        "The physical condition of stock certificates",
+        "The requirement that investments must be appropriate for a customer's situation",
+        "The legal status of a security",
+        "The expiration date of an option"
+      ],
+      "correct_answer": 1,
+      "explanation": "Suitability is the requirement that broker-dealers must have a reasonable basis to believe that a recommended transaction or investment strategy is appropriate for the customer based on their financial situation, needs, and objectives.",
+      "explanation_ru": "Пригодность (suitability) — это требование, что брокеры-дилеры должны иметь разумные основания полагать, что рекомендуемая сделка или инвестиционная стратегия подходит для клиента с учетом его финансового положения, потребностей и целей.",
+      "difficulty": 2
+    },
+    {
+      "id": "q089",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the CFTC?",
+      "question_ru": "Что такое CFTC?",
+      "options": [
+        "Central Federal Trading Corporation",
+        "Commodity Futures Trading Commission — regulates futures and options on commodities",
+        "Corporate Finance and Tax Council",
+        "Consumer Financial Trade Commission"
+      ],
+      "correct_answer": 1,
+      "explanation": "The CFTC (Commodity Futures Trading Commission) is a federal agency that regulates the U.S. derivatives markets, including futures, options, and swaps on commodities and financial instruments.",
+      "explanation_ru": "CFTC (Комиссия по торговле товарными фьючерсами) — это федеральное агентство, которое регулирует рынки деривативов США, включая фьючерсы, опционы и свопы на товары и финансовые инструменты.",
+      "difficulty": 2
+    },
+    {
+      "id": "q090",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the MSRB?",
+      "question_ru": "Что такое MSRB?",
+      "options": [
+        "Municipal Securities Rulemaking Board — regulates municipal bond market",
+        "Market Securities Regulatory Bureau",
+        "Mutual Fund Sales Review Board",
+        "Money Market Reserve Bank"
+      ],
+      "correct_answer": 0,
+      "explanation": "The MSRB (Municipal Securities Rulemaking Board) is a self-regulatory organization that writes rules for broker-dealers and banks involved in the municipal securities market.",
+      "explanation_ru": "MSRB (Совет по разработке правил муниципальных ценных бумаг) — это саморегулируемая организация, которая пишет правила для брокеров-дилеров и банков, участвующих в рынке муниципальных ценных бумаг.",
+      "difficulty": 2
+    },
+    {
+      "id": "q091",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_2",
+      "question": "What is Form ADV?",
+      "question_ru": "Что такое Form ADV?",
+      "options": [
+        "A form for registering securities",
+        "The uniform application for investment advisor registration",
+        "A tax form for investors",
+        "A customer complaint form"
+      ],
+      "correct_answer": 1,
+      "explanation": "Form ADV is the uniform application for investment advisor registration with the SEC and state regulators. It discloses the advisor's business practices, fees, and conflicts of interest.",
+      "explanation_ru": "Form ADV — это единое заявление для регистрации инвестиционного консультанта в SEC и регуляторах штатов. Оно раскрывает деловую практику консультанта, комиссии и конфликты интересов.",
+      "difficulty": 2
+    },
+    {
+      "id": "q092",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_2",
+      "question": "What is Regulation D?",
+      "question_ru": "Что такое Regulation D?",
+      "options": [
+        "A regulation for day trading",
+        "An SEC exemption for private placements of securities",
+        "A rule for dividend payments",
+        "A regulation for derivatives"
+      ],
+      "correct_answer": 1,
+      "explanation": "Regulation D provides exemptions from the registration requirements for private placements of securities. It allows companies to raise capital without registering with the SEC, subject to certain conditions.",
+      "explanation_ru": "Regulation D предоставляет исключения из требований регистрации для частных размещений ценных бумаг. Это позволяет компаниям привлекать капитал без регистрации в SEC при соблюдении определенных условий.",
+      "difficulty": 3
+    },
+    {
+      "id": "q093",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_2",
+      "question": "What is an accredited investor?",
+      "question_ru": "Что такое аккредитованный инвестор?",
+      "options": [
+        "Any investor with a brokerage account",
+        "An investor meeting specific income or net worth requirements",
+        "A certified financial planner",
+        "A government official"
+      ],
+      "correct_answer": 1,
+      "explanation": "An accredited investor is an individual or entity that meets specific income (>$200,000 annually) or net worth (>$1 million) requirements. They can invest in unregistered securities offerings.",
+      "explanation_ru": "Аккредитованный инвестор — это физическое или юридическое лицо, которое соответствует определенным требованиям по доходу (>$200,000 ежегодно) или чистой стоимости (>$1 миллион). Они могут инвестировать в незарегистрированные предложения ценных бумаг.",
+      "difficulty": 2
+    },
+    {
+      "id": "q094",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is AML (Anti-Money Laundering)?",
+      "question_ru": "Что такое AML (противодействие отмыванию денег)?",
+      "options": [
+        "A type of investment fund",
+        "Regulations to prevent the concealment of illegally obtained money",
+        "A stock trading strategy",
+        "A type of bond"
+      ],
+      "correct_answer": 1,
+      "explanation": "AML (Anti-Money Laundering) refers to laws and regulations designed to prevent criminals from disguising illegally obtained funds as legitimate income. Financial institutions must implement AML programs.",
+      "explanation_ru": "AML (противодействие отмыванию денег) относится к законам и правилам, разработанным для предотвращения сокрытия преступниками незаконно полученных средств как законного дохода. Финансовые учреждения должны внедрять программы AML.",
+      "difficulty": 2
+    },
+    {
+      "id": "q095",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is KYC (Know Your Customer)?",
+      "question_ru": "Что такое KYC (знай своего клиента)?",
+      "options": [
+        "A marketing strategy",
+        "The process of verifying the identity of clients",
+        "A type of investment",
+        "A customer service program"
+      ],
+      "correct_answer": 1,
+      "explanation": "KYC (Know Your Customer) is the process by which financial institutions verify the identity of their clients and assess their suitability, along with the potential risks of illegal intentions.",
+      "explanation_ru": "KYC (знай своего клиента) — это процесс, посредством которого финансовые учреждения проверяют личность своих клиентов и оценивают их пригодность, а также потенциальные риски незаконных намерений.",
+      "difficulty": 2
+    },
+    {
+      "id": "q096",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is a dark pool?",
+      "question_ru": "Что такое темный пул?",
+      "options": [
+        "A swimming pool at night",
+        "A private exchange for trading securities that is not accessible to the public",
+        "A type of mutual fund",
+        "A government bond market"
+      ],
+      "correct_answer": 1,
+      "explanation": "A dark pool is a private exchange or trading venue where securities are traded anonymously. It allows institutional investors to trade large blocks of shares without revealing their intentions to the public market.",
+      "explanation_ru": "Темный пул — это частная биржа или торговая площадка, где ценные бумаги торгуются анонимно. Это позволяет институциональным инвесторам торговать крупными пакетами акций, не раскрывая свои намерения публичному рынку.",
+      "difficulty": 3
+    },
+    {
+      "id": "q097",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is market capitalization?",
+      "question_ru": "Что такое рыночная капитализация?",
+      "options": [
+        "The total assets of a company",
+        "The total value of a company's outstanding shares",
+        "The company's annual revenue",
+        "The company's profit"
+      ],
+      "correct_answer": 1,
+      "explanation": "Market capitalization (market cap) is the total value of a company's outstanding shares, calculated by multiplying the current stock price by the total number of shares outstanding.",
+      "explanation_ru": "Рыночная капитализация (market cap) — это общая стоимость акций компании в обращении, рассчитываемая путем умножения текущей цены акции на общее количество акций в обращении.",
+      "difficulty": 1
+    },
+    {
+      "id": "q098",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is the P/E ratio?",
+      "question_ru": "Что такое коэффициент P/E?",
+      "options": [
+        "Price to Earnings ratio — stock price divided by earnings per share",
+        "Profit to Expense ratio",
+        "Price to Equity ratio",
+        "Performance Evaluation ratio"
+      ],
+      "correct_answer": 0,
+      "explanation": "The P/E (Price-to-Earnings) ratio is a valuation metric calculated by dividing the stock price by earnings per share (EPS). It indicates how much investors are willing to pay per dollar of earnings.",
+      "explanation_ru": "Коэффициент P/E (цена/прибыль) — это метрика оценки, рассчитываемая путем деления цены акции на прибыль на акцию (EPS). Он показывает, сколько инвесторы готовы заплатить за каждый доллар прибыли.",
+      "difficulty": 2
+    },
+    {
+      "id": "q099",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is duration in bonds?",
+      "question_ru": "Что такое дюрация в облигациях?",
+      "options": [
+        "The time until the bond matures",
+        "A measure of a bond's sensitivity to interest rate changes",
+        "The coupon payment period",
+        "The bond's credit rating"
+      ],
+      "correct_answer": 1,
+      "explanation": "Duration is a measure of a bond's sensitivity to changes in interest rates. It represents the weighted average time to receive the bond's cash flows. Higher duration means greater price volatility.",
+      "explanation_ru": "Дюрация — это мера чувствительности облигации к изменениям процентных ставок. Она представляет собой средневзвешенное время получения денежных потоков облигации. Более высокая дюрация означает большую волатильность цены.",
+      "difficulty": 3
+    },
+    {
+      "id": "q100",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is beta in investing?",
+      "question_ru": "Что такое бета в инвестировании?",
+      "options": [
+        "The second letter of the Greek alphabet",
+        "A measure of a stock's volatility relative to the market",
+        "The dividend yield",
+        "The P/E ratio"
+      ],
+      "correct_answer": 1,
+      "explanation": "Beta measures a stock's volatility relative to the overall market. A beta of 1 means the stock moves with the market; >1 means more volatile; <1 means less volatile.",
+      "explanation_ru": "Бета измеряет волатильность акции относительно всего рынка. Бета 1 означает, что акция движется вместе с рынком; >1 означает более волатильную; <1 означает менее волатильную.",
+      "difficulty": 2
+    },
+    {
+      "id": "q101",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is the inside market?",
+      "question_ru": "Что такое внутренний рынок?",
+      "options": [
+        "Trading inside a building",
+        "The highest bid and lowest ask prices in the market",
+        "Insider trading",
+        "The stock exchange floor"
+      ],
+      "correct_answer": 1,
+      "explanation": "The inside market (or inside quote) refers to the highest bid price and the lowest ask price currently available in the market. It represents the best prices for buying and selling.",
+      "explanation_ru": "Внутренний рынок (или внутренняя котировка) относится к самой высокой цене спроса и самой низкой цене предложения, доступным в настоящее время на рынке. Он представляет лучшие цены для покупки и продажи.",
+      "difficulty": 2
+    },
+    {
+      "id": "q102",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a SEP IRA?",
+      "question_ru": "Что такое SEP IRA?",
+      "options": [
+        "A retirement plan for self-employed individuals and small businesses",
+        "A plan for government employees",
+        "A plan for corporate executives",
+        "A plan for students"
+      ],
+      "correct_answer": 0,
+      "explanation": "A SEP (Simplified Employee Pension) IRA is a retirement plan for self-employed individuals and small business owners. It allows higher contribution limits than traditional IRAs.",
+      "explanation_ru": "SEP (упрощенный пенсионный план для сотрудников) IRA — это пенсионный план для самозанятых лиц и владельцев малого бизнеса. Он позволяет более высокие лимиты взносов, чем традиционные IRA.",
+      "difficulty": 2
+    },
+    {
+      "id": "q103",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is a fiduciary duty?",
+      "question_ru": "Что такое фидуциарная обязанность?",
+      "options": [
+        "A duty to maximize profits",
+        "A legal obligation to act in the best interest of another party",
+        "A duty to report to the SEC",
+        "A duty to pay taxes"
+      ],
+      "correct_answer": 1,
+      "explanation": "Fiduciary duty is a legal obligation to act in the best interest of another party. Investment advisors have a fiduciary duty to their clients, requiring them to put clients' interests first.",
+      "explanation_ru": "Фидуциарная обязанность — это юридическое обязательство действовать в интересах другой стороны. Инвестиционные консультанты несут фидуциарную обязанность перед своими клиентами, требуя ставить интересы клиентов на первое место.",
+      "difficulty": 2
+    },
+    {
+      "id": "q104",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is the statute of limitations for securities fraud?",
+      "question_ru": "Какой срок исковой давности для мошенничества с ценными бумагами?",
+      "options": [
+        "1 year",
+        "2 years from discovery or 5 years from the violation",
+        "10 years",
+        "No statute of limitations"
+      ],
+      "correct_answer": 1,
+      "explanation": "The statute of limitations for securities fraud is generally 2 years from the discovery of the fraud or 5 years from the violation, whichever comes first.",
+      "explanation_ru": "Срок исковой давности для мошенничества с ценными бумагами обычно составляет 2 года с момента обнаружения мошенничества или 5 лет с момента нарушения, в зависимости от того, что наступит раньше.",
+      "difficulty": 3
+    },
+    {
+      "id": "q105",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What is quantitative easing?",
+      "question_ru": "Что такое количественное смягчение?",
+      "options": [
+        "Raising interest rates",
+        "A monetary policy where the central bank purchases securities to increase money supply",
+        "Reducing government spending",
+        "Increasing taxes"
+      ],
+      "correct_answer": 1,
+      "explanation": "Quantitative easing (QE) is a monetary policy where a central bank purchases government securities or other securities from the market to increase the money supply and encourage lending and investment.",
+      "explanation_ru": "Количественное смягчение (QE) — это денежная политика, при которой центральный банк покупает государственные ценные бумаги или другие ценные бумаги на рынке для увеличения денежной массы и стимулирования кредитования и инвестиций.",
+      "difficulty": 3
+    },
+    {
+      "id": "q106",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a callable bond?",
+      "question_ru": "Что такое отзывная облигация?",
+      "options": [
+        "A bond that can be returned for a refund",
+        "A bond that the issuer can redeem before maturity",
+        "A bond with a phone number",
+        "A bond that pays extra interest"
+      ],
+      "correct_answer": 1,
+      "explanation": "A callable bond is a bond that the issuer has the right to redeem (call) before its maturity date, usually at a premium. This allows the issuer to refinance if interest rates decline.",
+      "explanation_ru": "Отзывная облигация — это облигация, которую эмитент имеет право погасить (отозвать) до даты погашения, обычно с премией. Это позволяет эмитенту рефинансировать, если процентные ставки снижаются.",
+      "difficulty": 2
+    },
+    {
+      "id": "q107",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is intrinsic value of an option?",
+      "question_ru": "Что такое внутренняя стоимость опциона?",
+      "options": [
+        "The price of the option",
+        "The amount by which the option is in-the-money",
+        "The expiration date",
+        "The strike price"
+      ],
+      "correct_answer": 1,
+      "explanation": "Intrinsic value is the amount by which an option is in-the-money. For a call option, it's the difference between the stock price and strike price (if positive). For a put option, it's the strike price minus stock price.",
+      "explanation_ru": "Внутренняя стоимость — это сумма, на которую опцион находится в деньгах. Для опциона колл это разница между ценой акции и ценой страйк (если положительная). Для опциона пут это цена страйк минус цена акции.",
+      "difficulty": 2
+    },
+    {
+      "id": "q108",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is the Sharpe ratio?",
+      "question_ru": "Что такое коэффициент Шарпа?",
+      "options": [
+        "A measure of risk-adjusted return",
+        "A type of stock",
+        "A bond rating",
+        "A dividend measure"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Sharpe ratio measures risk-adjusted return by dividing the excess return (return above risk-free rate) by the standard deviation of returns. Higher Sharpe ratio indicates better risk-adjusted performance.",
+      "explanation_ru": "Коэффициент Шарпа измеряет доходность с поправкой на риск путем деления избыточной доходности (доходность выше безрисковой ставки) на стандартное отклонение доходности. Более высокий коэффициент Шарпа указывает на лучшую производительность с поправкой на риск.",
+      "difficulty": 3
+    },
+    {
+      "id": "q109",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is the bid-ask spread?",
+      "question_ru": "Что такое спред спроса-предложения?",
+      "options": [
+        "The difference between the highest bid and lowest ask",
+        "The commission charged by brokers",
+        "The profit from a trade",
+        "The tax on securities transactions"
+      ],
+      "correct_answer": 0,
+      "explanation": "The bid-ask spread is the difference between the highest price a buyer is willing to pay (bid) and the lowest price a seller is willing to accept (ask). It represents the cost of trading.",
+      "explanation_ru": "Спред спроса-предложения — это разница между самой высокой ценой, которую покупатель готов заплатить (спрос), и самой низкой ценой, которую продавец готов принять (предложение). Он представляет стоимость торговли.",
+      "difficulty": 1
+    },
+    {
+      "id": "q110",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_3",
+      "question": "What is a transfer agent?",
+      "question_ru": "Что такое трансферный агент?",
+      "options": [
+        "A person who transfers money",
+        "A company that maintains records of shareholders and handles dividend payments",
+        "A stock broker",
+        "A government regulator"
+      ],
+      "correct_answer": 1,
+      "explanation": "A transfer agent is a company that maintains records of shareholders, handles dividend payments, and processes the transfer of stock ownership when shares are bought or sold.",
+      "explanation_ru": "Трансферный агент — это компания, которая ведет учет акционеров, обрабатывает выплаты дивидендов и обрабатывает передачу права собственности на акции при покупке или продаже акций.",
+      "difficulty": 2
+    },
+    {
+      "id": "q111",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the Securities Act of 1933?",
+      "question_ru": "Что такое Закон о ценных бумагах 1933 года?",
+      "options": [
+        "A law regulating stock exchanges",
+        "A law requiring registration of new securities offerings",
+        "A law creating the SEC",
+        "A law regulating insider trading"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Securities Act of 1933 requires that investors receive financial and other significant information concerning securities being offered for public sale. It prohibits deceit, misrepresentations, and other fraud in the sale of securities.",
+      "explanation_ru": "Закон о ценных бумагах 1933 года требует, чтобы инвесторы получали финансовую и другую существенную информацию о ценных бумагах, предлагаемых для публичной продажи. Он запрещает обман, искажения и другое мошенничество при продаже ценных бумаг.",
+      "difficulty": 2
+    },
+    {
+      "id": "q112",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the Securities Exchange Act of 1934?",
+      "question_ru": "Что такое Закон о фондовых биржах 1934 года?",
+      "options": [
+        "A law creating stock exchanges",
+        "A law creating the SEC and regulating secondary markets",
+        "A law regulating initial public offerings",
+        "A law setting interest rates"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Securities Exchange Act of 1934 created the SEC and regulates secondary trading of securities (stocks, bonds, etc.). It governs the operation of securities exchanges and broker-dealers.",
+      "explanation_ru": "Закон о фондовых биржах 1934 года создал SEC и регулирует вторичную торговлю ценными бумагами (акции, облигации и т.д.). Он регулирует работу фондовых бирж и брокеров-дилеров.",
+      "difficulty": 2
+    },
+    {
+      "id": "q113",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_2",
+      "question": "What is a prime broker?",
+      "question_ru": "Что такое прайм-брокер?",
+      "options": [
+        "The best broker in the industry",
+        "A broker that provides services to hedge funds and large investors",
+        "A government broker",
+        "A broker for prime numbers"
+      ],
+      "correct_answer": 1,
+      "explanation": "A prime broker is a broker-dealer that provides specialized services to hedge funds and other large institutional investors, including securities lending, leveraged trade execution, and consolidated reporting.",
+      "explanation_ru": "Прайм-брокер — это брокер-дилер, который предоставляет специализированные услуги хедж-фондам и другим крупным институциональным инвесторам, включая кредитование ценных бумаг, исполнение сделок с кредитным плечом и консолидированную отчетность.",
+      "difficulty": 3
+    },
+    {
+      "id": "q114",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_5",
+      "question": "What is the death benefit in life insurance?",
+      "question_ru": "Что такое пособие в случае смерти в страховании жизни?",
+      "options": [
+        "The premium paid by the insured",
+        "The amount paid to beneficiaries when the insured dies",
+        "The cash value of the policy",
+        "The commission paid to the agent"
+      ],
+      "correct_answer": 1,
+      "explanation": "The death benefit is the amount of money paid to the beneficiaries when the insured person dies. It's the primary purpose of life insurance.",
+      "explanation_ru": "Пособие в случае смерти — это сумма денег, выплачиваемая бенефициарам, когда застрахованное лицо умирает. Это основная цель страхования жизни.",
+      "difficulty": 1
+    },
+    {
+      "id": "q115",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a custodian in securities?",
+      "question_ru": "Что такое кастодиан в ценных бумагах?",
+      "options": [
+        "A security guard",
+        "A financial institution that holds customers' securities for safekeeping",
+        "A type of broker",
+        "A government regulator"
+      ],
+      "correct_answer": 1,
+      "explanation": "A custodian is a financial institution (usually a bank) that holds customers' securities for safekeeping to prevent them from being lost or stolen. They also handle settlements and dividend collections.",
+      "explanation_ru": "Кастодиан — это финансовое учреждение (обычно банк), которое хранит ценные бумаги клиентов для сохранности, чтобы предотвратить их потерю или кражу. Они также обрабатывают расчеты и сбор дивидендов.",
+      "difficulty": 2
+    },
+    {
+      "id": "q116",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is a cease and desist order?",
+      "question_ru": "Что такое приказ о прекращении и воздержании?",
+      "options": [
+        "An order to stop illegal activities",
+        "An order to continue trading",
+        "An order to pay dividends",
+        "An order to issue new securities"
+      ],
+      "correct_answer": 0,
+      "explanation": "A cease and desist order is a legal order issued by a regulatory agency (like the SEC) requiring a person or company to stop engaging in illegal or unauthorized activities.",
+      "explanation_ru": "Приказ о прекращении и воздержании — это юридический приказ, выданный регулирующим агентством (таким как SEC), требующий от лица или компании прекратить заниматься незаконной или несанкционированной деятельностью.",
+      "difficulty": 2
+    },
+    {
+      "id": "q117",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is the Investor Protection Fund?",
+      "question_ru": "Что такое Фонд защиты инвесторов?",
+      "options": [
+        "A fund managed by the SEC to pay whistleblowers",
+        "A mutual fund for investors",
+        "A government bond fund",
+        "A retirement fund"
+      ],
+      "correct_answer": 0,
+      "explanation": "The Investor Protection Fund is managed by the SEC to pay awards to whistleblowers who provide original information leading to successful enforcement actions resulting in monetary sanctions exceeding $1 million.",
+      "explanation_ru": "Фонд защиты инвесторов управляется SEC для выплаты наград информаторам, которые предоставляют оригинальную информацию, приводящую к успешным правоприменительным действиям, resulting in денежным санкциям, превышающим $1 миллион.",
+      "difficulty": 3
+    },
+    {
+      "id": "q118",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is the OTC market?",
+      "question_ru": "Что такое внебиржевой рынок?",
+      "options": [
+        "Over-The-Counter market — a decentralized market for trading securities",
+        "Official Trading Center",
+        "Open Trading Corporation",
+        "Organized Trade Commission"
+      ],
+      "correct_answer": 0,
+      "explanation": "The OTC (Over-The-Counter) market is a decentralized market where securities are traded directly between parties without a central exchange. It includes stocks not listed on major exchanges.",
+      "explanation_ru": "Внебиржевой рынок (OTC) — это децентрализованный рынок, где ценные бумаги торгуются напрямую между сторонами без центральной биржи. Он включает акции, не котирующиеся на основных биржах.",
+      "difficulty": 2
+    },
+    {
+      "id": "q119",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is a blue-chip stock?",
+      "question_ru": "Что такое голубая фишка?",
+      "options": [
+        "A stock that is literally blue in color",
+        "A stock of a large, well-established, and financially stable company",
+        "A penny stock",
+        "A newly issued stock"
+      ],
+      "correct_answer": 1,
+      "explanation": "Blue-chip stocks are shares of large, well-established, and financially stable companies with a history of reliable performance. They are considered relatively safe investments.",
+      "explanation_ru": "Голубые фишки — это акции крупных, хорошо зарекомендовавших себя и финансово стабильных компаний с историей надежной работы. Они считаются относительно безопасными инвестициями.",
+      "difficulty": 1
+    },
+    {
+      "id": "q120",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a zero-coupon bond?",
+      "question_ru": "Что такое бескупонная облигация?",
+      "options": [
+        "A bond with no face value",
+        "A bond that pays no periodic interest and is sold at a deep discount",
+        "A bond with zero risk",
+        "A bond that cannot be sold"
+      ],
+      "correct_answer": 1,
+      "explanation": "A zero-coupon bond is a bond that pays no periodic interest (coupons). It is sold at a deep discount to face value, and the investor's return is the difference between the purchase price and the face value at maturity.",
+      "explanation_ru": "Бескупонная облигация — это облигация, которая не выплачивает периодические проценты (купоны). Она продается с глубокой скидкой к номинальной стоимости, и доход инвестора — это разница между ценой покупки и номинальной стоимостью при погашении.",
+      "difficulty": 2
+    }
+  ]
+}

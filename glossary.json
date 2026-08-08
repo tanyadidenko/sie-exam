@@ -314,6 +314,186 @@
       "definition_ru": "Стратегия разделения инвестиций между различными категориями активов, такими как акции, облигации и наличные.",
       "topic_id": "topic_2",
       "example": "A 60/40 portfolio has 60% stocks and 40% bonds."
+    },
+    {
+      "id": "term_036",
+      "term": "Blue-Chip Stock",
+      "term_ru": "Голубая фишка",
+      "definition": "Stock of a large, well-established, and financially stable company with a history of reliable performance.",
+      "definition_ru": "Акция крупной, хорошо зарекомендовавшей себя и финансово стабильной компании с историей надежной работы.",
+      "topic_id": "topic_2",
+      "example": "Apple, Microsoft, and Johnson & Johnson are considered blue-chip stocks."
+    },
+    {
+      "id": "term_037",
+      "term": "Penny Stock",
+      "term_ru": "Копеечная акция",
+      "definition": "A low-priced stock (typically under $5) that trades on OTC markets and is considered high-risk.",
+      "definition_ru": "Недорогая акция (обычно менее $5), которая торгуется на внебиржевых рынках и считается высокорисковой.",
+      "topic_id": "topic_2",
+      "example": "Penny stocks are volatile and often subject to fraud schemes like pump-and-dump."
+    },
+    {
+      "id": "term_038",
+      "term": "Market Order",
+      "term_ru": "Рыночный ордер",
+      "definition": "An order to buy or sell a security immediately at the best available current price.",
+      "definition_ru": "Приказ на покупку или продажу ценной бумаги немедленно по лучшей доступной текущей цене.",
+      "topic_id": "topic_3",
+      "example": "A market order guarantees execution but not price."
+    },
+    {
+      "id": "term_039",
+      "term": "Limit Order",
+      "term_ru": "Лимитный ордер",
+      "definition": "An order to buy or sell a security at a specific price or better.",
+      "definition_ru": "Приказ на покупку или продажу ценной бумаги по определенной цене или лучше.",
+      "topic_id": "topic_3",
+      "example": "A buy limit order at $50 will only execute if the price is $50 or lower."
+    },
+    {
+      "id": "term_040",
+      "term": "Stop-Loss Order",
+      "term_ru": "Стоп-лосс ордер",
+      "definition": "An order that becomes a market order when the security reaches a specified price, used to limit losses.",
+      "definition_ru": "Приказ, который становится рыночным ордером, когда ценная бумага достигает указанной цены, используется для ограничения убытков.",
+      "topic_id": "topic_3",
+      "example": "A stop-loss at $45 protects you from further losses if the stock falls."
+    },
+    {
+      "id": "term_041",
+      "term": "Margin Account",
+      "term_ru": "Маржинальный счет",
+      "definition": "An account that allows investors to borrow money from their broker to purchase securities.",
+      "definition_ru": "Счет, который позволяет инвесторам занимать деньги у брокера для покупки ценных бумаг.",
+      "topic_id": "topic_3",
+      "example": "With a margin account, you can buy $10,000 of stock with only $5,000 of your own money."
+    },
+    {
+      "id": "term_042",
+      "term": "Short Selling",
+      "term_ru": "Короткая продажа",
+      "definition": "Selling borrowed securities with the intention of buying them back later at a lower price.",
+      "definition_ru": "Продажа заимствованных ценных бумаг с намерением выкупить их позже по более низкой цене.",
+      "topic_id": "topic_3",
+      "example": "Short sellers profit when stock prices decline."
+    },
+    {
+      "id": "term_043",
+      "term": "Insider Trading",
+      "term_ru": "Инсайдерская торговля",
+      "definition": "The illegal practice of trading securities based on material non-public information.",
+      "definition_ru": "Незаконная практика торговли ценными бумагами на основе существенной непубличной информации.",
+      "topic_id": "topic_3",
+      "example": "A CEO buying stock before announcing good earnings is insider trading."
+    },
+    {
+      "id": "term_044",
+      "term": "SEC",
+      "term_ru": "SEC (Комиссия по ценным бумагам и биржам)",
+      "definition": "Securities and Exchange Commission — a federal agency that regulates the securities industry.",
+      "definition_ru": "Комиссия по ценным бумагам и биржам — федеральное агентство, регулирующее индустрию ценных бумаг.",
+      "topic_id": "topic_4",
+      "example": "The SEC requires companies to disclose financial information to investors."
+    },
+    {
+      "id": "term_045",
+      "term": "FINRA",
+      "term_ru": "FINRA (Управление по регулированию финансовой индустрии)",
+      "definition": "Financial Industry Regulatory Authority — a self-regulatory organization that regulates broker-dealers.",
+      "definition_ru": "Управление по регулированию финансовой индустрии — саморегулируемая организация, регулирующая брокеров-дилеров.",
+      "topic_id": "topic_4",
+      "example": "FINRA administers the SIE and Series 7 exams."
+    },
+    {
+      "id": "term_046",
+      "term": "SIPC",
+      "term_ru": "SIPC (Корпорация по защите инвесторов)",
+      "definition": "Securities Investor Protection Corporation — protects customers against broker-dealer insolvency up to $500,000.",
+      "definition_ru": "Корпорация по защите инвесторов в ценные бумаги — защищает клиентов от несостоятельности брокера-дилера до $500,000.",
+      "topic_id": "topic_4",
+      "example": "If your broker goes bankrupt, SIPC protects your assets up to $500,000."
+    },
+    {
+      "id": "term_047",
+      "term": "IPO",
+      "term_ru": "IPO (Первичное публичное размещение)",
+      "definition": "Initial Public Offering — the first sale of stock by a company to the public.",
+      "definition_ru": "Первичное публичное размещение — первая продажа акций компании публике.",
+      "topic_id": "topic_1",
+      "example": "When a private company goes public, it conducts an IPO."
+    },
+    {
+      "id": "term_048",
+      "term": "Dividend",
+      "term_ru": "Дивиденд",
+      "definition": "A distribution of a portion of a company's earnings to shareholders.",
+      "definition_ru": "Распределение части прибыли компании акционерам.",
+      "topic_id": "topic_2",
+      "example": "Apple pays quarterly dividends to its shareholders."
+    },
+    {
+      "id": "term_049",
+      "term": "Bond",
+      "term_ru": "Облигация",
+      "definition": "A debt instrument where the issuer promises to pay periodic interest and return principal at maturity.",
+      "definition_ru": "Долговой инструмент, где эмитент обещает выплачивать периодические проценты и вернуть основную сумму при погашении.",
+      "topic_id": "topic_2",
+      "example": "A 10-year Treasury bond pays interest semi-annually and returns $1,000 at maturity."
+    },
+    {
+      "id": "term_050",
+      "term": "Mutual Fund",
+      "term_ru": "Взаимный фонд",
+      "definition": "An investment company that pools money from many investors to purchase a diversified portfolio of securities.",
+      "definition_ru": "Инвестиционная компания, которая объединяет деньги многих инвесторов для покупки диверсифицированного портфеля ценных бумаг.",
+      "topic_id": "topic_2",
+      "example": "A mutual fund might hold stocks from 100 different companies."
+    },
+    {
+      "id": "term_051",
+      "term": "ETF",
+      "term_ru": "ETF (Биржевой фонд)",
+      "definition": "Exchange-Traded Fund — a fund that trades on an exchange like a stock throughout the trading day.",
+      "definition_ru": "Биржевой фонд — фонд, который торгуется на бирже как акция в течение торгового дня.",
+      "topic_id": "topic_2",
+      "example": "SPY is an ETF that tracks the S&P 500 index."
+    },
+    {
+      "id": "term_052",
+      "term": "Call Option",
+      "term_ru": "Опцион колл",
+      "definition": "A contract that gives the buyer the right to buy an asset at a specified price within a specified time period.",
+      "definition_ru": "Контракт, дающий покупателю право купить актив по указанной цене в течение определённого периода времени.",
+      "topic_id": "topic_2",
+      "example": "Buying a call option on XYZ stock with strike price $50 gives you the right to buy XYZ at $50."
+    },
+    {
+      "id": "term_053",
+      "term": "Put Option",
+      "term_ru": "Опцион пут",
+      "definition": "A contract that gives the buyer the right to sell an asset at a specified price within a specified time period.",
+      "definition_ru": "Контракт, дающий покупателю право продать актив по указанной цене в течение определённого периода времени.",
+      "topic_id": "topic_2",
+      "example": "Buying a put option protects you from price declines."
+    },
+    {
+      "id": "term_054",
+      "term": "Bull Market",
+      "term_ru": "Бычий рынок",
+      "definition": "A market condition where prices are rising or expected to rise.",
+      "definition_ru": "Состояние рынка, когда цены растут или ожидается их рост.",
+      "topic_id": "topic_1",
+      "example": "The S&P 500 was in a bull market from 2009 to 2020."
+    },
+    {
+      "id": "term_055",
+      "term": "Bear Market",
+      "term_ru": "Медвежий рынок",
+      "definition": "A market condition where prices are falling or expected to fall, typically 20% or more from recent highs.",
+      "definition_ru": "Состояние рынка, когда цены падают или ожидается их падение, обычно на 20% или более от недавних максимумов.",
+      "topic_id": "topic_1",
+      "example": "The 2008 financial crisis triggered a bear market."
     }
   ]
 }
