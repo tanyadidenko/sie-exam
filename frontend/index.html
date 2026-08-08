@@ -290,6 +290,13 @@
 </head>
 <body>
   <div class="container">
+    <!-- Language Switcher -->
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+      <button onclick="toggleLanguage()" style="background: white; border: none; border-radius: 20px; padding: 8px 16px; cursor: pointer; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+         <span id="lang-label">EN</span>
+      </button>
+    </div>
+
     <!-- Menu Screen -->
     <div id="menu-screen" class="screen active">
       <div class="header">
@@ -433,6 +440,29 @@
     let currentQuestionIndex = 0;
     let correctAnswers = 0;
     let currentTopic = null;
+    let currentLanguage = 'ru'; // 'ru' or 'en'
+
+    // Language toggle
+    function toggleLanguage() {
+      currentLanguage = currentLanguage === 'ru' ? 'en' : 'ru';
+      document.getElementById('lang-label').textContent = currentLanguage.toUpperCase();
+      localStorage.setItem('preferredLanguage', currentLanguage);
+      
+      // Refresh current screen if needed
+      const activeScreen = document.querySelector('.screen.active');
+      if (activeScreen && activeScreen.id === 'theory-detail-screen') {
+        // Re-render theory detail with new language
+        const topicId = activeScreen.dataset.topicId;
+        if (topicId) showTheoryDetail(topicId);
+      }
+    }
+
+    // Load preferred language
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+      currentLanguage = savedLang;
+      document.getElementById('lang-label').textContent = currentLanguage.toUpperCase();
+    }
 
     // API helpers
     async function apiGet(url) {
@@ -647,13 +677,15 @@
         return;
       }
 
+      const isEn = currentLanguage === 'en';
+
       document.getElementById('theory-content').innerHTML = `
         <div class="topic-list">
           ${topics.map(topic => `
             <button class="topic-btn" onclick="showTheoryDetail('${topic.id}')">
-              <div class="topic-name">${topic.name_ru}</div>
-              <div class="topic-progress">${topic.name} (${topic.weight}%)</div>
-              <div style="margin-top: 8px; font-size: 13px; color: #64748b;">${topic.overview}</div>
+              <div class="topic-name">${isEn ? topic.name : topic.name_ru}</div>
+              <div class="topic-progress">${isEn ? topic.name_ru : topic.name} (${topic.weight}%)</div>
+              <div style="margin-top: 8px; font-size: 13px; color: #64748b;">${isEn ? topic.theory.overview_en : topic.theory.overview_ru}</div>
             </button>
           `).join('')}
         </div>
@@ -668,23 +700,28 @@
         return;
       }
 
+      // Store topicId for language switching
+      document.getElementById('theory-detail-screen').dataset.topicId = topicId;
+
+      const isEn = currentLanguage === 'en';
+      
       let html = `
         <div class="header">
-          <h1>${topic.name_ru}</h1>
-          <p>${topic.name}</p>
+          <h1>${isEn ? topic.name : topic.name_ru}</h1>
+          <p style="font-size: 14px; color: #64748b;">${isEn ? topic.name_ru : topic.name} (${topic.weight}%)</p>
         </div>
         <div class="question-card">
-          <h3>Обзор</h3>
-          <p>${topic.theory.overview}</p>
+          <h3>${isEn ? 'Overview' : 'Обзор'}</h3>
+          <p>${isEn ? topic.theory.overview_en : topic.theory.overview_ru}</p>
         </div>
       `;
 
       topic.theory.sections.forEach((section, idx) => {
         html += `
           <div class="question-card">
-            <h3>${section.title_ru}</h3>
-            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">${section.title}</p>
-            <div style="line-height: 1.6;">${section.content.replace(/\n/g, '<br>')}</div>
+            <h3>${isEn ? section.title : section.title_ru}</h3>
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">${isEn ? section.title_ru : section.title}</p>
+            <div style="line-height: 1.6;">${(isEn ? section.content_en : section.content_ru).replace(/\n/g, '<br>')}</div>
           </div>
         `;
       });
