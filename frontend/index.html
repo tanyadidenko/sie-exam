@@ -313,6 +313,24 @@
       </div>
 
       <div class="menu">
+        <button class="menu-btn" onclick="showTheory()">
+          <div class="menu-btn-icon"></div>
+          <div class="menu-btn-title">Теория</div>
+          <div class="menu-btn-desc">Изучите материал по всем темам экзамена</div>
+        </button>
+
+        <button class="menu-btn" onclick="showGlossary()">
+          <div class="menu-btn-icon">📖</div>
+          <div class="menu-btn-title">Термины</div>
+          <div class="menu-btn-desc">Глоссарий ключевых терминов</div>
+        </button>
+
+        <button class="menu-btn" onclick="showTermsReview()">
+          <div class="menu-btn-icon">🔄</div>
+          <div class="menu-btn-title">Повторение терминов</div>
+          <div class="menu-btn-desc">Интервальное повторение терминов</div>
+        </button>
+
         <button class="menu-btn" onclick="showTopics()">
           <div class="menu-btn-icon">🎯</div>
           <div class="menu-btn-title">Практика по темам</div>
@@ -320,13 +338,13 @@
         </button>
 
         <button class="menu-btn" onclick="startFullTest()">
-          <div class="menu-btn-icon">📝</div>
+          <div class="menu-btn-icon"></div>
           <div class="menu-btn-title">Полный тест</div>
           <div class="menu-btn-desc">75 вопросов за 105 минут</div>
         </button>
 
         <button class="menu-btn" onclick="showMistakes()">
-          <div class="menu-btn-icon">🔄</div>
+          <div class="menu-btn-icon">❌</div>
           <div class="menu-btn-title">Повторение ошибок</div>
           <div class="menu-btn-desc">Работа над проблемными вопросами</div>
         </button>
@@ -371,6 +389,37 @@
         <h1>📊 Статистика</h1>
       </div>
       <div id="stats-content"></div>
+    </div>
+
+    <!-- Theory Screen -->
+    <div id="theory-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div class="header">
+        <h1>📚 Теория</h1>
+      </div>
+      <div id="theory-content"></div>
+    </div>
+
+    <!-- Theory Detail Screen -->
+    <div id="theory-detail-screen" class="screen">
+      <button class="back-btn" onclick="showTheory()">← Назад к темам</button>
+      <div id="theory-detail-content"></div>
+    </div>
+
+    <!-- Glossary Screen -->
+    <div id="glossary-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div class="header">
+        <h1> Глоссарий</h1>
+      </div>
+      <input type="text" id="glossary-search" placeholder="Поиск термина..." oninput="searchGlossary()" style="width: 100%; padding: 12px; margin-bottom: 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px;">
+      <div id="glossary-content"></div>
+    </div>
+
+    <!-- Terms Review Screen -->
+    <div id="terms-review-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div id="terms-review-content"></div>
     </div>
   </div>
 
@@ -587,6 +636,172 @@
         document.getElementById('stat-streak').textContent = stats.streak || 0;
         document.getElementById('stat-questions').textContent = stats.total_questions || 0;
       }
+    }
+
+    // Theory functions
+    async function showTheory() {
+      showScreen('theory-screen');
+      const topics = await apiGet('/api/theory');
+      if (!topics) {
+        document.getElementById('theory-content').innerHTML = '<div class="error">Не удалось загрузить теорию</div>';
+        return;
+      }
+
+      document.getElementById('theory-content').innerHTML = `
+        <div class="topic-list">
+          ${topics.map(topic => `
+            <button class="topic-btn" onclick="showTheoryDetail('${topic.id}')">
+              <div class="topic-name">${topic.name_ru}</div>
+              <div class="topic-progress">${topic.name} (${topic.weight}%)</div>
+              <div style="margin-top: 8px; font-size: 13px; color: #64748b;">${topic.overview}</div>
+            </button>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    async function showTheoryDetail(topicId) {
+      showScreen('theory-detail-screen');
+      const topic = await apiGet(`/api/theory?topic_id=${topicId}`);
+      if (!topic) {
+        document.getElementById('theory-detail-content').innerHTML = '<div class="error">Не удалось загрузить тему</div>';
+        return;
+      }
+
+      let html = `
+        <div class="header">
+          <h1>${topic.name_ru}</h1>
+          <p>${topic.name}</p>
+        </div>
+        <div class="question-card">
+          <h3>Обзор</h3>
+          <p>${topic.theory.overview}</p>
+        </div>
+      `;
+
+      topic.theory.sections.forEach((section, idx) => {
+        html += `
+          <div class="question-card">
+            <h3>${section.title_ru}</h3>
+            <p style="font-size: 13px; color: #64748b; margin-bottom: 12px;">${section.title}</p>
+            <div style="line-height: 1.6;">${section.content.replace(/\n/g, '<br>')}</div>
+          </div>
+        `;
+      });
+
+      document.getElementById('theory-detail-content').innerHTML = html;
+    }
+
+    // Glossary functions
+    async function showGlossary() {
+      showScreen('glossary-screen');
+      const terms = await apiGet('/api/glossary');
+      if (!terms) {
+        document.getElementById('glossary-content').innerHTML = '<div class="error">Не удалось загрузить термины</div>';
+        return;
+      }
+
+      displayGlossary(terms);
+    }
+
+    function displayGlossary(terms) {
+      document.getElementById('glossary-content').innerHTML = `
+        <div class="topic-list">
+          ${terms.map(term => `
+            <div class="question-card" style="margin-bottom: 12px;">
+              <h3>${term.term}</h3>
+              <p style="font-size: 13px; color: #64748b; margin-bottom: 8px;">${term.term_ru}</p>
+              <p style="margin-bottom: 8px;">${term.definition}</p>
+              <p style="font-size: 13px; color: #64748b;">${term.definition_ru}</p>
+              ${term.example ? `<p style="margin-top: 8px; font-size: 13px; background: #eff6ff; padding: 8px; border-radius: 4px;"><strong>Пример:</strong> ${term.example}</p>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    async function searchGlossary() {
+      const query = document.getElementById('glossary-search').value;
+      if (query.length < 2) {
+        showGlossary();
+        return;
+      }
+
+      const terms = await apiGet(`/api/glossary?search=${encodeURIComponent(query)}`);
+      if (terms) {
+        displayGlossary(terms);
+      }
+    }
+
+    // Terms Review functions
+    async function showTermsReview() {
+      showScreen('terms-review-screen');
+      const terms = await apiGet('/api/terms-review?limit=10');
+      if (!terms || terms.length === 0) {
+        document.getElementById('terms-review-content').innerHTML = `
+          <div class="result-card">
+            <h2>Нет терминов для повторения</h2>
+            <p>Вы выучили все термины! Возвращайтесь завтра.</p>
+            <button class="next-btn" onclick="showMenu()">В главное меню</button>
+          </div>
+        `;
+        return;
+      }
+
+      // Store terms in sessionStorage for access in answerTerm
+      sessionStorage.setItem('currentTerms', JSON.stringify(terms));
+      displayTermsReview(terms, 0, 0);
+    }
+
+    function displayTermsReview(terms, index, correct) {
+      if (index >= terms.length) {
+        const percentage = Math.round((correct / terms.length) * 100);
+        document.getElementById('terms-review-content').innerHTML = `
+          <div class="result-card">
+            <h2>Повторение завершено!</h2>
+            <div class="result-score">${percentage}%</div>
+            <div class="result-label">${correct} из ${terms.length} терминов правильно</div>
+            <button class="next-btn" onclick="showMenu()">В главное меню</button>
+          </div>
+        `;
+        return;
+      }
+
+      const term = terms[index];
+      document.getElementById('terms-review-content').innerHTML = `
+        <div class="question-card">
+          <div class="question-number">Термин ${index + 1} из ${terms.length}</div>
+          <div class="question-text">${term.term}</div>
+          <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">${term.term_ru}</p>
+          <div class="options">
+            <button class="option-btn" onclick="answerTerm(${index}, ${correct}, true, '${term.term_id}')">
+              Знаю определение
+            </button>
+            <button class="option-btn" onclick="answerTerm(${index}, ${correct}, false, '${term.term_id}')">
+              Не знаю
+            </button>
+          </div>
+          <div id="term-explanation" style="display: none;">
+            <div class="explanation">
+              <strong>Определение:</strong><br>
+              ${term.definition}<br><br>
+              ${term.definition_ru}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    async function answerTerm(index, correct, isCorrect, termId) {
+      await apiPost('/api/term-progress', { term_id: termId, is_correct: isCorrect });
+
+      document.querySelectorAll('.option-btn').forEach(btn => btn.disabled = true);
+      document.getElementById('term-explanation').style.display = 'block';
+
+      setTimeout(() => {
+        const terms = JSON.parse(sessionStorage.getItem('currentTerms') || '[]');
+        displayTermsReview(terms, index + 1, isCorrect ? correct + 1 : correct);
+      }, 2000);
     }
 
     // Initialize

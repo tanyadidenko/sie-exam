@@ -2,68 +2,140 @@
   "methodology": {
     "name": "Adaptive Learning with Spaced Repetition",
     "name_ru": "Адаптивное обучение с интервальным повторением",
-    "description": "Научно обоснованный подход к подготовке к экзамену SIE, использующий интервальное повторение (SM-2) и адаптивную сложность.",
-    "phases": [
+    "description": "Научно обоснованный подход к подготовке к экзамену SIE, использующий интервальное повторение (SM-2) для вопросов, терминов и теории.",
+    
+    "learning_path": [
       {
-        "id": "phase_1",
-        "name": "Foundation",
-        "name_ru": "Основы",
-        "duration_weeks": 2,
-        "description": "Изучение базовых концепций по всем темам экзамена",
-        "daily_time_minutes": 30,
+        "phase": 1,
+        "name": "Theory Study",
+        "name_ru": "Изучение теории",
+        "duration_days": 14,
         "activities": [
-          "Практика по темам (20 вопросов в день)",
-          "Повторение проблемных вопросов",
-          "Чтение объяснений"
+          "Читать теорию по каждой теме",
+          "Изучать термины и определения",
+          "Делать заметки",
+          "Повторять ключевые концепции"
         ]
       },
       {
-        "id": "phase_2",
-        "name": "Deep Practice",
-        "name_ru": "Углубленная практика",
-        "duration_weeks": 3,
-        "description": "Интенсивная практика с фокусом на слабых темах",
-        "daily_time_minutes": 45,
+        "phase": 2,
+        "name": "Practice Questions",
+        "name_ru": "Практические вопросы",
+        "duration_days": 21,
         "activities": [
-          "Практика по слабым темам (30 вопросов в день)",
-          "Полные тесты (75 вопросов) раз в 3 дня",
-          "Анализ ошибок"
+          "Решать вопросы по темам",
+          "Анализировать ошибки",
+          "Повторять проблемные темы",
+          "Учить термины"
         ]
       },
       {
-        "id": "phase_3",
-        "name": "Exam Readiness",
-        "name_ru": "Готовность к экзамену",
-        "duration_weeks": 2,
-        "description": "Финальная подготовка с полными тестами",
-        "daily_time_minutes": 60,
+        "phase": 3,
+        "name": "Full Tests",
+        "name_ru": "Полные тесты",
+        "duration_days": 14,
         "activities": [
-          "Полные тесты каждый день (75 вопросов)",
-          "Повторение всех проблемных вопросов",
-          "Тренировка скорости (105 минут на тест)"
+          "Проходить полные тесты (75 вопросов)",
+          "Повторять ошибки",
+          "Тренировать скорость",
+          "Повторять термины"
         ]
       }
     ],
-    "algorithms": {
-      "sm2": {
-        "name": "SM-2 Spaced Repetition",
-        "description": "Алгоритм интервального повторения, адаптирующий интервалы на основе результатов",
-        "parameters": {
-          "initial_interval": 1,
-          "ease_factor_start": 2.5,
-          "ease_factor_min": 1.3,
-          "interval_multiplier": 2.5
+
+    "spaced_repetition": {
+      "algorithm": "SM-2",
+      "description": "Алгоритм интервального повторения, адаптирующий интервалы на основе результатов",
+      
+      "parameters": {
+        "initial_interval": 1,
+        "ease_factor_start": 2.5,
+        "ease_factor_min": 1.3,
+        "interval_multiplier": 2.5
+      },
+
+      "schedule": {
+        "correct_answer": {
+          "description": "Правильный ответ — увеличиваем интервал",
+          "intervals": [1, 3, 7, 14, 30, 60, 90],
+          "action": "Следующее повторение через N дней"
+        },
+        "incorrect_answer": {
+          "description": "Неправильный ответ — сокращаем интервал",
+          "action": "Повторить через 1 день",
+          "reset_ease_factor": true
         }
       },
-      "adaptive_difficulty": {
-        "name": "Adaptive Difficulty",
-        "description": "Адаптивная сложность — вопросы подбираются на основе уровня знаний",
-        "rules": [
-          "Правильный ответ → следующий вопрос сложнее",
-          "Неправильный ответ → следующий вопрос проще",
-          "3 правильных подряд → переход к следующей теме"
-        ]
+
+      "application": {
+        "questions": "Вопросы повторяются на основе истории ответов",
+        "terms": "Термины повторяются до полного запоминания",
+        "theory_sections": "Разделы теории повторяются для закрепления"
       }
+    },
+
+    "review_schedule": {
+      "daily": {
+        "new_terms": 5,
+        "review_terms": 20,
+        "practice_questions": 20,
+        "review_mistakes": 10
+      },
+      "weekly": {
+        "full_test": 1,
+        "theory_review": "Все темы за неделю",
+        "weak_areas": "Фокус на слабых темах"
+      },
+      "monthly": {
+        "comprehensive_test": 2,
+        "progress_assessment": true,
+        "adjust_study_plan": true
+      }
+    },
+
+    "progress_tracking": {
+      "metrics": [
+        "total_questions_answered",
+        "correct_answers",
+        "accuracy_percentage",
+        "terms_learned",
+        "theory_sections_completed",
+        "streak_days",
+        "xp_points",
+        "level"
+      ],
+      "milestones": [
+        {
+          "name": "Theory Complete",
+          "name_ru": "Теория изучена",
+          "condition": "all_theory_sections_read"
+        },
+        {
+          "name": "Terms Master",
+          "name_ru": "Термины выучены",
+          "condition": "all_terms_learned"
+        },
+        {
+          "name": "Practice Ready",
+          "name_ru": "Готов к практике",
+          "condition": "100_questions_answered"
+        },
+        {
+          "name": "Exam Ready",
+          "name_ru": "Готов к экзамену",
+          "condition": "3_consecutive_tests_70_percent"
+        }
+      ]
+    },
+
+    "adaptive_difficulty": {
+      "description": "Адаптивная сложность — вопросы подбираются на основе уровня знаний",
+      "rules": [
+        "Правильный ответ → следующий вопрос сложнее",
+        "Неправильный ответ → следующий вопрос проще",
+        "3 правильных подряд → переход к следующей теме",
+        "2 неправильных подряд → повторение текущей темы"
+      ]
     }
   }
 }
