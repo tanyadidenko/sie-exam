@@ -142,8 +142,6 @@ function initDatabase() {
   }
 }
 
-initDatabase();
-
 // Load data files
 const topics = JSON.parse(fs.readFileSync(path.join(__dirname, 'topics.json'), 'utf8'));
 const questionsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'questions.json'), 'utf8'));
@@ -151,6 +149,8 @@ const achievements = JSON.parse(fs.readFileSync(path.join(__dirname, 'achievemen
 const dailyGoals = JSON.parse(fs.readFileSync(path.join(__dirname, 'daily-goals.json'), 'utf8'));
 const theoryData = JSON.parse(fs.readFileSync(path.join(__dirname, 'theory.json'), 'utf8'));
 const glossaryData = JSON.parse(fs.readFileSync(path.join(__dirname, 'glossary.json'), 'utf8'));
+
+initDatabase();
 
 // Helper: Generate token
 function generateToken() {
