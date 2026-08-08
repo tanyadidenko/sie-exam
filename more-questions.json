@@ -1,0 +1,344 @@
+{
+  "more_questions": [
+    {
+      "id": "q046",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is liquidity in financial markets?",
+      "question_ru": "Что такое ликвидность на финансовых рынках?",
+      "options": [
+        "The ability to convert an asset to cash quickly without affecting its price",
+        "The total value of all securities traded",
+        "The number of investors in the market",
+        "The volatility of stock prices"
+      ],
+      "correct_answer": 0,
+      "explanation": "Liquidity refers to how easily and quickly an asset can be converted to cash without significantly affecting its price. Highly liquid assets can be sold quickly at fair market value.",
+      "explanation_ru": "Ликвидность относится к тому, насколько легко и быстро актив может быть конвертирован в наличные без значительного влияния на его цену. Высоколиквидные активы могут быть быстро проданы по справедливой рыночной стоимости.",
+      "difficulty": 1
+    },
+    {
+      "id": "q047",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What is inflation?",
+      "question_ru": "Что такое инфляция?",
+      "options": [
+        "A decrease in the general price level",
+        "An increase in the general price level over time",
+        "The interest rate set by the Fed",
+        "The unemployment rate"
+      ],
+      "correct_answer": 1,
+      "explanation": "Inflation is the rate at which the general level of prices for goods and services rises, eroding purchasing power. The Fed monitors inflation and adjusts monetary policy accordingly.",
+      "explanation_ru": "Инфляция — это скорость, с которой растет общий уровень цен на товары и услуги, снижая покупательную способность. ФРС отслеживает инфляцию и соответствующим образом корректирует денежную политику.",
+      "difficulty": 1
+    },
+    {
+      "id": "q048",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is a dividend?",
+      "question_ru": "Что такое дивиденд?",
+      "options": [
+        "Interest paid on bonds",
+        "A distribution of a company's earnings to shareholders",
+        "The fee paid to a broker",
+        "The price of a stock"
+      ],
+      "correct_answer": 1,
+      "explanation": "A dividend is a distribution of a portion of a company's earnings to its shareholders. Dividends are typically paid quarterly and are not guaranteed.",
+      "explanation_ru": "Дивиденд — это распределение части прибыли компании ее акционерам. Дивиденды обычно выплачиваются ежеквартально и не гарантированы.",
+      "difficulty": 1
+    },
+    {
+      "id": "q049",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is capital appreciation?",
+      "question_ru": "Что такое прирост капитала?",
+      "options": [
+        "The decrease in stock price",
+        "The increase in the value of an investment over time",
+        "The dividend yield",
+        "The interest earned on bonds"
+      ],
+      "correct_answer": 1,
+      "explanation": "Capital appreciation is the increase in the value of an investment over time. For stocks, it's the difference between the purchase price and the current (or sale) price.",
+      "explanation_ru": "Прирост капитала — это увеличение стоимости инвестиции с течением времени. Для акций это разница между ценой покупки и текущей (или продажной) ценой.",
+      "difficulty": 1
+    },
+    {
+      "id": "q050",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a coupon rate?",
+      "question_ru": "Что такое купонная ставка?",
+      "options": [
+        "The price of a bond",
+        "The annual interest rate paid by a bond",
+        "The maturity date of a bond",
+        "The yield to maturity"
+      ],
+      "correct_answer": 1,
+      "explanation": "The coupon rate is the annual interest rate paid by a bond, expressed as a percentage of the bond's face value. For example, a 5% coupon on a $1,000 bond pays $50 per year.",
+      "explanation_ru": "Купонная ставка — это годовая процентная ставка, выплачиваемая по облигации, выраженная как процент от номинальной стоимости облигации. Например, 5% купон на облигации $1,000 выплачивает $50 в год.",
+      "difficulty": 1
+    },
+    {
+      "id": "q051",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is yield to maturity (YTM)?",
+      "question_ru": "Что такое доходность к погашению (YTM)?",
+      "options": [
+        "The coupon rate of a bond",
+        "The total return anticipated on a bond if held until maturity",
+        "The current price of a bond",
+        "The interest rate set by the Fed"
+      ],
+      "correct_answer": 1,
+      "explanation": "Yield to maturity (YTM) is the total return anticipated on a bond if it is held until it matures. YTM considers the coupon payments, face value, and current market price.",
+      "explanation_ru": "Доходность к погашению (YTM) — это общая ожидаемая доходность по облигации, если она удерживается до погашения. YTM учитывает купонные платежи, номинальную стоимость и текущую рыночную цену.",
+      "difficulty": 2
+    },
+    {
+      "id": "q052",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a mortgage-backed security (MBS)?",
+      "question_ru": "Что такое ипотечная ценная бумага (MBS)?",
+      "options": [
+        "A bond issued by the government",
+        "A security backed by a pool of mortgage loans",
+        "A stock in a real estate company",
+        "A type of mutual fund"
+      ],
+      "correct_answer": 1,
+      "explanation": "A mortgage-backed security (MBS) is a type of asset-backed security that is secured by a collection of mortgage loans. Investors receive payments derived from the underlying mortgage payments.",
+      "explanation_ru": "Ипотечная ценная бумага (MBS) — это тип ценной бумаги, обеспеченной пулом ипотечных кредитов. Инвесторы получают платежи, полученные от основных ипотечных платежей.",
+      "difficulty": 2
+    },
+    {
+      "id": "q053",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is the premium of an option?",
+      "question_ru": "Что такое премия опциона?",
+      "options": [
+        "The strike price",
+        "The price paid to buy the option",
+        "The expiration date",
+        "The intrinsic value"
+      ],
+      "correct_answer": 1,
+      "explanation": "The premium is the price paid by the buyer to the seller for an option contract. It represents the maximum loss for the option buyer.",
+      "explanation_ru": "Премия — это цена, уплаченная покупателем продавцу за контракт опциона. Она представляет собой максимальный убыток для покупателя опциона.",
+      "difficulty": 1
+    },
+    {
+      "id": "q054",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is expiration date for an option?",
+      "question_ru": "Что такое дата истечения для опциона?",
+      "options": [
+        "The date the option was purchased",
+        "The last date the option can be exercised",
+        "The date the stock was issued",
+        "The settlement date"
+      ],
+      "correct_answer": 1,
+      "explanation": "The expiration date is the last date on which an option can be exercised. After this date, the option becomes worthless if it's out of the money.",
+      "explanation_ru": "Дата истечения — это последняя дата, когда опцион может быть исполнен. После этой даты опцион становится бесполезным, если он вне денег.",
+      "difficulty": 1
+    },
+    {
+      "id": "q055",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is diversification?",
+      "question_ru": "Что такое диверсификация?",
+      "options": [
+        "Investing all money in one stock",
+        "Spreading investments across different assets to reduce risk",
+        "Buying only bonds",
+        "Investing only in foreign markets"
+      ],
+      "correct_answer": 1,
+      "explanation": "Diversification is the strategy of spreading investments across various assets, sectors, or markets to reduce overall risk. The goal is that losses in some investments are offset by gains in others.",
+      "explanation_ru": "Диверсификация — это стратегия распределения инвестиций по различным активам, секторам или рынкам для снижения общего риска. Цель состоит в том, чтобы убытки в некоторых инвестициях компенсировались прибылями в других.",
+      "difficulty": 1
+    },
+    {
+      "id": "q056",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is an expense ratio for a mutual fund?",
+      "question_ru": "Что такое коэффициент расходов для взаимного фонда?",
+      "options": [
+        "The dividend yield",
+        "The annual fee expressed as a percentage of assets",
+        "The management bonus",
+        "The tax rate"
+      ],
+      "correct_answer": 1,
+      "explanation": "The expense ratio is the annual fee that mutual funds charge their shareholders, expressed as a percentage of the fund's average net assets. It covers management fees, administrative costs, and other operating expenses.",
+      "explanation_ru": "Коэффициент расходов — это годовая комиссия, которую взаимные фонды взимают со своих акционеров, выраженная как процент от средних чистых активов фонда. Он покрывает комиссии за управление, административные расходы и другие операционные расходы.",
+      "difficulty": 2
+    },
+    {
+      "id": "q057",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a day order?",
+      "question_ru": "Что такое дневной ордер?",
+      "options": [
+        "An order that remains active until canceled",
+        "An order that expires at the end of the trading day",
+        "An order placed before market open",
+        "An order for day trading only"
+      ],
+      "correct_answer": 1,
+      "explanation": "A day order is an order to buy or sell securities that expires at the end of the trading day if not executed. If not filled by market close, the order is canceled.",
+      "explanation_ru": "Дневной ордер — это ордер на покупку или продажу ценных бумаг, который истекает в конце торгового дня, если не исполнен. Если не заполнен до закрытия рынка, ордер отменяется.",
+      "difficulty": 1
+    },
+    {
+      "id": "q058",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a GTC (Good-Til-Canceled) order?",
+      "question_ru": "Что такое ордер GTC (Действителен до отмены)?",
+      "options": [
+        "An order that expires at the end of the day",
+        "An order that remains active until executed or canceled",
+        "An order that can only be placed by institutions",
+        "An order for government securities only"
+      ],
+      "correct_answer": 1,
+      "explanation": "A GTC (Good-Til-Canceled) order remains active until it is either executed or canceled by the investor. It does not expire at the end of the trading day.",
+      "explanation_ru": "Ордер GTC (Действителен до отмены) остается активным до тех пор, пока не будет исполнен или отменен инвестором. Он не истекает в конце торгового дня.",
+      "difficulty": 2
+    },
+    {
+      "id": "q059",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a cash account?",
+      "question_ru": "Что такое денежный счет?",
+      "options": [
+        "An account that allows borrowing from the broker",
+        "An account where all transactions must be paid in full",
+        "An account for cash deposits only",
+        "An account with no fees"
+      ],
+      "correct_answer": 1,
+      "explanation": "A cash account is a brokerage account where all transactions must be paid in full with cash. No borrowing is allowed, and securities must be fully paid for before they can be sold.",
+      "explanation_ru": "Денежный счет — это брокерский счет, где все сделки должны быть оплачены полностью наличными. Заимствование не разрешено, и ценные бумаги должны быть полностью оплачены до их продажи.",
+      "difficulty": 1
+    },
+    {
+      "id": "q060",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is short selling?",
+      "question_ru": "Что такое короткая продажа?",
+      "options": [
+        "Selling securities quickly",
+        "Selling borrowed securities with the intention of buying them back later at a lower price",
+        "Selling only small amounts of stock",
+        "Selling securities before they are purchased"
+      ],
+      "correct_answer": 1,
+      "explanation": "Short selling involves borrowing securities and selling them, with the intention of buying them back later at a lower price to return to the lender. The profit is the difference between the sale price and the purchase price.",
+      "explanation_ru": "Короткая продажа включает заимствование ценных бумаг и их продажу с намерением выкупить их позже по более низкой цене для возврата кредитору. Прибыль — это разница между ценой продажи и ценой покупки.",
+      "difficulty": 2
+    },
+    {
+      "id": "q061",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_3",
+      "question": "What is T+2 settlement?",
+      "question_ru": "Что такое расчеты T+2?",
+      "options": [
+        "Settlement on the same day as the trade",
+        "Settlement two business days after the trade date",
+        "Settlement two weeks after the trade",
+        "Settlement at the end of the month"
+      ],
+      "correct_answer": 1,
+      "explanation": "T+2 settlement means that securities transactions settle two business days after the trade date. The buyer must pay, and the seller must deliver the securities, within this timeframe.",
+      "explanation_ru": "Расчеты T+2 означают, что сделки с ценными бумагами рассчитываются через два рабочих дня после даты сделки. Покупатель должен заплатить, а продавец должен поставить ценные бумаги в этот срок.",
+      "difficulty": 1
+    },
+    {
+      "id": "q062",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is fraud in securities trading?",
+      "question_ru": "Что такое мошенничество в торговле ценными бумагами?",
+      "options": [
+        "Making profitable trades",
+        "Deceptive practices that mislead investors",
+        "Trading on public information",
+        "Paying commissions to brokers"
+      ],
+      "correct_answer": 1,
+      "explanation": "Securities fraud involves deceptive practices that mislead investors, such as false statements, omission of material facts, or manipulation of stock prices. It is illegal and subject to severe penalties.",
+      "explanation_ru": "Мошенничество с ценными бумагами включает обманные практики, которые вводят инвесторов в заблуждение, такие как ложные заявления, умолчание о существенных фактах или манипулирование ценами акций. Это незаконно и подлежит суровым наказаниям.",
+      "difficulty": 1
+    },
+    {
+      "id": "q063",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is a self-regulatory organization (SRO)?",
+      "question_ru": "Что такое саморегулируемая организация (SRO)?",
+      "options": [
+        "A government agency",
+        "A non-governmental organization that regulates its own members",
+        "A type of investment fund",
+        "A stock exchange"
+      ],
+      "correct_answer": 1,
+      "explanation": "An SRO is a non-governmental organization that has the power to create and enforce industry regulations and standards. FINRA is an example of an SRO that regulates broker-dealers.",
+      "explanation_ru": "SRO — это неправительственная организация, которая имеет власть создавать и применять отраслевые правила и стандарты. FINRA является примером SRO, которая регулирует брокеров-дилеров.",
+      "difficulty": 2
+    },
+    {
+      "id": "q064",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_2",
+      "question": "Who must register with FINRA?",
+      "question_ru": "Кто должен регистрироваться в FINRA?",
+      "options": [
+        "All investors",
+        "Broker-dealers and their registered representatives",
+        "Only mutual funds",
+        "Only foreign companies"
+      ],
+      "correct_answer": 1,
+      "explanation": "Broker-dealers and their associated persons (registered representatives) must register with FINRA. This includes passing qualification exams and meeting continuing education requirements.",
+      "explanation_ru": "Брокеры-дилеры и их связанные лица (зарегистрированные представители) должны регистрироваться в FINRA. Это включает сдачу квалификационных экзаменов и соблюдение требований непрерывного образования.",
+      "difficulty": 1
+    },
+    {
+      "id": "q065",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is arbitration in securities disputes?",
+      "question_ru": "Что такое арбитраж в спорах о ценных бумагах?",
+      "options": [
+        "A court trial",
+        "A method of resolving disputes outside of court through a neutral third party",
+        "A government investigation",
+        "A type of insurance"
+      ],
+      "correct_answer": 1,
+      "explanation": "Arbitration is a method of resolving disputes outside of the court system. A neutral arbitrator hears both sides and makes a binding decision. FINRA operates one of the largest securities arbitration forums.",
+      "explanation_ru": "Арбитраж — это метод разрешения споров вне судебной системы. Нейтральный арбитр заслушивает обе стороны и принимает обязательное решение. FINRA operates один из крупнейших форумов арбитража ценных бумаг.",
+      "difficulty": 2
+    }
+  ]
+}

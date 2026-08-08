@@ -332,10 +332,16 @@
           <div class="menu-btn-desc">Глоссарий ключевых терминов</div>
         </button>
 
+        <button class="menu-btn" onclick="showTermsStudy()">
+          <div class="menu-btn-icon">🎓</div>
+          <div class="menu-btn-title">Изучение терминов</div>
+          <div class="menu-btn-desc">Тренажёр для запоминания терминов</div>
+        </button>
+
         <button class="menu-btn" onclick="showTermsReview()">
           <div class="menu-btn-icon">🔄</div>
           <div class="menu-btn-title">Повторение терминов</div>
-          <div class="menu-btn-desc">Интервальное повторение терминов</div>
+          <div class="menu-btn-desc">Интервальное повторение изученных терминов</div>
         </button>
 
         <button class="menu-btn" onclick="showTopics()">
@@ -427,6 +433,12 @@
     <div id="terms-review-screen" class="screen">
       <button class="back-btn" onclick="showMenu()">← Назад</button>
       <div id="terms-review-content"></div>
+    </div>
+
+    <!-- Terms Study Screen -->
+    <div id="terms-study-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div id="terms-study-content"></div>
     </div>
   </div>
 
@@ -768,6 +780,58 @@
       if (terms) {
         displayGlossary(terms);
       }
+    }
+
+    // Terms Study functions (new - for learning terms)
+    async function showTermsStudy() {
+      showScreen('terms-study-screen');
+      const terms = await apiGet('/api/terms-study?limit=20');
+      if (!terms || terms.length === 0) {
+        document.getElementById('terms-study-content').innerHTML = `
+          <div class="result-card">
+            <h2>Нет терминов для изучения</h2>
+            <p>Все термины уже изучены!</p>
+            <button class="next-btn" onclick="showMenu()">В главное меню</button>
+          </div>
+        `;
+        return;
+      }
+
+      sessionStorage.setItem('studyTerms', JSON.stringify(terms));
+      displayTermsStudy(terms, 0);
+    }
+
+    function displayTermsStudy(terms, index) {
+      if (index >= terms.length) {
+        document.getElementById('terms-study-content').innerHTML = `
+          <div class="result-card">
+            <h2>Изучение завершено!</h2>
+            <p>Вы изучили ${terms.length} терминов</p>
+            <button class="next-btn" onclick="showMenu()">В главное меню</button>
+          </div>
+        `;
+        return;
+      }
+
+      const term = terms[index];
+      document.getElementById('terms-study-content').innerHTML = `
+        <div class="question-card">
+          <div class="question-number">Термин ${index + 1} из ${terms.length}</div>
+          <div class="question-text">${term.term}</div>
+          <p style="font-size: 14px; color: #64748b; margin-bottom: 16px;">${term.term_ru}</p>
+          <div style="background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
+            <p style="margin-bottom: 8px;"><strong>Definition:</strong> ${term.definition}</p>
+            <p style="font-size: 13px; color: #64748b;"><strong>Определение:</strong> ${term.definition_ru}</p>
+            ${term.example ? `<p style="margin-top: 8px; font-size: 13px; background: #eff6ff; padding: 8px; border-radius: 4px;"><strong>Example:</strong> ${term.example}</p>` : ''}
+          </div>
+          <button class="next-btn" onclick="nextStudyTerm(${index})">Следующий термин</button>
+        </div>
+      `;
+    }
+
+    function nextStudyTerm(index) {
+      const terms = JSON.parse(sessionStorage.getItem('studyTerms') || '[]');
+      displayTermsStudy(terms, index + 1);
     }
 
     // Terms Review functions

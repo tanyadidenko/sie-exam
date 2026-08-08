@@ -1,0 +1,412 @@
+{
+  "additional_questions": [
+    {
+      "id": "q022",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is an IPO?",
+      "question_ru": "Что такое IPO?",
+      "options": [
+        "Initial Public Offering — first sale of stock by a company to the public",
+        "International Purchase Order",
+        "Investment Portfolio Option",
+        "Internal Profit Operation"
+      ],
+      "correct_answer": 0,
+      "explanation": "IPO (Initial Public Offering) is the first time a private company offers its shares to the public, transitioning from private to public ownership.",
+      "explanation_ru": "IPO (первичное публичное размещение) — это первый раз, когда частная компания предлагает свои акции публике, переходя от частного к публичному владению.",
+      "difficulty": 1
+    },
+    {
+      "id": "q023",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "Which of the following is an example of a secondary market transaction?",
+      "question_ru": "Какой из следующих примеров является сделкой на вторичном рынке?",
+      "options": [
+        "A company issuing new shares to raise capital",
+        "An investor buying shares from another investor on NYSE",
+        "A company conducting an IPO",
+        "A company issuing bonds for the first time"
+      ],
+      "correct_answer": 1,
+      "explanation": "When an investor buys shares from another investor on an exchange like NYSE, this is a secondary market transaction. The company doesn't receive money from this trade.",
+      "explanation_ru": "Когда инвестор покупает акции у другого инвестора на бирже, такой как NYSE, это сделка на вторичном рынке. Компания не получает деньги от этой сделки.",
+      "difficulty": 2
+    },
+    {
+      "id": "q024",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_2",
+      "question": "What is the role of an investment advisor?",
+      "question_ru": "Какова роль инвестиционного консультанта?",
+      "options": [
+        "To execute trades on behalf of clients",
+        "To provide investment recommendations for a fee",
+        "To issue new securities",
+        "To regulate the securities industry"
+      ],
+      "correct_answer": 1,
+      "explanation": "Investment advisors provide personalized investment advice and financial planning services to clients for a fee. They have a fiduciary duty to act in the client's best interest.",
+      "explanation_ru": "Инвестиционные консультанты предоставляют персонализированные инвестиционные рекомендации и услуги финансового планирования клиентам за плату. Они несут фидуциарную обязанность действовать в интересах клиента.",
+      "difficulty": 1
+    },
+    {
+      "id": "q025",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What happens during the expansion phase of the business cycle?",
+      "question_ru": "Что происходит во время фазы роста экономического цикла?",
+      "options": [
+        "GDP decreases and unemployment rises",
+        "GDP increases and unemployment decreases",
+        "Inflation reaches its peak",
+        "The economy hits its lowest point"
+      ],
+      "correct_answer": 1,
+      "explanation": "During expansion, the economy grows: GDP increases, employment rises, consumer spending increases, and business profits grow.",
+      "explanation_ru": "Во время роста экономика развивается: ВВП увеличивается, занятость растет, потребительские расходы увеличиваются, и прибыли бизнеса растут.",
+      "difficulty": 1
+    },
+    {
+      "id": "q026",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is the main difference between common stock and preferred stock?",
+      "question_ru": "В чем основное отличие обыкновенной акции от привилегированной?",
+      "options": [
+        "Common stock has fixed dividends, preferred stock has variable dividends",
+        "Common stock has voting rights, preferred stock typically does not",
+        "Preferred stock has higher growth potential",
+        "Common stock is less risky"
+      ],
+      "correct_answer": 1,
+      "explanation": "Common stockholders typically have voting rights in corporate decisions, while preferred stockholders usually do not vote but receive fixed dividends with priority over common stock.",
+      "explanation_ru": "Владельцы обыкновенных акций обычно имеют право голоса в корпоративных решениях, в то время как владельцы привилегированных акций обычно не голосуют, но получают фиксированные дивиденды с приоритетом перед обыкновенными акциями.",
+      "difficulty": 2
+    },
+    {
+      "id": "q027",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is an ADR?",
+      "question_ru": "Что такое ADR?",
+      "options": [
+        "American Depositary Receipt — certificate representing shares of a foreign company",
+        "Annual Dividend Rate",
+        "Asset Distribution Ratio",
+        "Authorized Dealer Registration"
+      ],
+      "correct_answer": 0,
+      "explanation": "ADR (American Depositary Receipt) is a certificate issued by a U.S. bank representing shares of a foreign company, allowing U.S. investors to trade foreign stocks in dollars.",
+      "explanation_ru": "ADR (американская депозитарная расписка) — это сертификат, выпущенный американским банком, представляющий акции иностранной компании, позволяющий американским инвесторам торговать иностранными акциями в долларах.",
+      "difficulty": 2
+    },
+    {
+      "id": "q028",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is the face value of a bond?",
+      "question_ru": "Что такое номинальная стоимость облигации?",
+      "options": [
+        "The price at which the bond trades in the market",
+        "The amount the issuer promises to repay at maturity",
+        "The annual interest payment",
+        "The current yield of the bond"
+      ],
+      "correct_answer": 1,
+      "explanation": "Face value (or par value) is the amount the bond issuer promises to repay to the bondholder at maturity. For most corporate bonds, this is $1,000.",
+      "explanation_ru": "Номинальная стоимость (или паритет) — это сумма, которую эмитент облигации обещает выплатить держателю облигации при погашении. Для большинства корпоративных облигаций это $1,000.",
+      "difficulty": 1
+    },
+    {
+      "id": "q029",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a municipal bond?",
+      "question_ru": "Что такое муниципальная облигация?",
+      "options": [
+        "A bond issued by the federal government",
+        "A bond issued by state or local governments",
+        "A bond issued by corporations",
+        "A bond backed by real estate"
+      ],
+      "correct_answer": 1,
+      "explanation": "Municipal bonds are issued by state and local governments to fund public projects. Interest earned is often exempt from federal taxes and sometimes state taxes.",
+      "explanation_ru": "Муниципальные облигации выпускаются правительствами штатов и местных органов власти для финансирования общественных проектов. Полученные проценты часто освобождены от федеральных налогов, а иногда и от налогов штата.",
+      "difficulty": 1
+    },
+    {
+      "id": "q030",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a Treasury bond?",
+      "question_ru": "Что такое казначейская облигация?",
+      "options": [
+        "A bond issued by corporations",
+        "A bond issued by the U.S. government",
+        "A bond issued by foreign governments",
+        "A bond backed by real estate"
+      ],
+      "correct_answer": 1,
+      "explanation": "Treasury bonds are debt securities issued by the U.S. Department of the Treasury. They are considered very low risk because they are backed by the full faith and credit of the U.S. government.",
+      "explanation_ru": "Казначейские облигации — это долговые ценные бумаги, выпущенные Министерством финансов США. Они считаются очень низкорисковыми, потому что обеспечены полной верой и кредитом правительства США.",
+      "difficulty": 1
+    },
+    {
+      "id": "q031",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is the strike price of an option?",
+      "question_ru": "Что такое цена страйк опциона?",
+      "options": [
+        "The current market price of the underlying asset",
+        "The predetermined price at which the option holder can buy or sell",
+        "The price paid for the option",
+        "The expiration date of the option"
+      ],
+      "correct_answer": 1,
+      "explanation": "The strike price (or exercise price) is the predetermined price at which the option holder has the right to buy (call) or sell (put) the underlying asset.",
+      "explanation_ru": "Цена страйк (или цена исполнения) — это заранее определенная цена, по которой держатель опциона имеет право купить (колл) или продать (пут) базовый актив.",
+      "difficulty": 1
+    },
+    {
+      "id": "q032",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What does 'in the money' mean for a call option?",
+      "question_ru": "Что означает 'в деньгах' для опциона колл?",
+      "options": [
+        "The stock price is below the strike price",
+        "The stock price is above the strike price",
+        "The option has expired",
+        "The option has no intrinsic value"
+      ],
+      "correct_answer": 1,
+      "explanation": "A call option is 'in the money' when the underlying stock price is above the strike price, meaning the option has intrinsic value and could be exercised profitably.",
+      "explanation_ru": "Опцион колл находится 'в деньгах', когда цена базовой акции выше цены страйк, что означает, что опцион имеет внутреннюю стоимость и может быть исполнен с прибылью.",
+      "difficulty": 2
+    },
+    {
+      "id": "q033",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is NAV (Net Asset Value)?",
+      "question_ru": "Что такое СЧА (Стоимость чистых активов)?",
+      "options": [
+        "The total value of a company's stock",
+        "The per-share value of a mutual fund calculated daily",
+        "The interest rate on a bond",
+        "The dividend yield of a stock"
+      ],
+      "correct_answer": 1,
+      "explanation": "NAV (Net Asset Value) is the per-share value of a mutual fund, calculated by dividing the total value of the fund's assets minus liabilities by the number of shares outstanding. It's calculated once daily.",
+      "explanation_ru": "СЧА (Стоимость чистых активов) — это стоимость одной доли взаимного фонда, рассчитываемая путем деления общей стоимости активов фонда за вычетом обязательств на количество находящихся в обращении долей. Рассчитывается один раз в день.",
+      "difficulty": 2
+    },
+    {
+      "id": "q034",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is a REIT?",
+      "question_ru": "Что такое REIT?",
+      "options": [
+        "Real Estate Investment Trust — company that owns income-producing real estate",
+        "Retirement Equity Investment Tool",
+        "Regulated Exchange Investment Trust",
+        "Real Estate Income Tax"
+      ],
+      "correct_answer": 0,
+      "explanation": "REIT (Real Estate Investment Trust) is a company that owns, operates, or finances income-producing real estate. REITs must pay at least 90% of taxable income as dividends to shareholders.",
+      "explanation_ru": "REIT (траст инвестиций в недвижимость) — это компания, которая владеет, управляет или финансирует доходную недвижимость. REIT должны выплачивать не менее 90% налогооблагаемого дохода в виде дивидендов акционерам.",
+      "difficulty": 2
+    },
+    {
+      "id": "q035",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a stop-loss order?",
+      "question_ru": "Что такое стоп-лосс ордер?",
+      "options": [
+        "An order to buy at a specific price",
+        "An order that becomes a market order when price falls to a specified level",
+        "An order that cancels all other orders",
+        "An order that guarantees a profit"
+      ],
+      "correct_answer": 1,
+      "explanation": "A stop-loss order becomes a market order to sell when the security's price falls to a specified level. It's used to limit potential losses.",
+      "explanation_ru": "Стоп-лосс ордер становится рыночным ордером на продажу, когда цена ценной бумаги падает до указанного уровня. Он используется для ограничения потенциальных убытков.",
+      "difficulty": 1
+    },
+    {
+      "id": "q036",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is the difference between a buy limit order and a sell limit order?",
+      "question_ru": "В чем разница между лимитным ордером на покупку и лимитным ордером на продажу?",
+      "options": [
+        "Buy limit is at or below specified price; sell limit is at or above specified price",
+        "Buy limit is at or above specified price; sell limit is at or below specified price",
+        "There is no difference",
+        "Buy limit is for stocks; sell limit is for bonds"
+      ],
+      "correct_answer": 0,
+      "explanation": "A buy limit order executes at the specified price or lower (you want to buy cheap). A sell limit order executes at the specified price or higher (you want to sell high).",
+      "explanation_ru": "Лимитный ордер на покупку исполняется по указанной цене или ниже (вы хотите купить дешево). Лимитный ордер на продажу исполняется по указанной цене или выше (вы хотите продать дорого).",
+      "difficulty": 2
+    },
+    {
+      "id": "q037",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is the minimum deposit required for a margin account?",
+      "question_ru": "Какой минимальный депозит требуется для маржинального счета?",
+      "options": [
+        "$500",
+        "$1,000",
+        "$2,000",
+        "$5,000"
+      ],
+      "correct_answer": 2,
+      "explanation": "FINRA requires a minimum deposit of $2,000 to open a margin account. This is known as the minimum margin requirement.",
+      "explanation_ru": "FINRA требует минимальный депозит $2,000 для открытия маржинального счета. Это известно как минимальное маржинальное требование.",
+      "difficulty": 2
+    },
+    {
+      "id": "q038",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a margin call?",
+      "question_ru": "Что такое маржин-колл?",
+      "options": [
+        "A phone call from your broker with stock recommendations",
+        "A demand for additional funds when account value falls below minimum",
+        "A notification that your account has been closed",
+        "A warning about market volatility"
+      ],
+      "correct_answer": 1,
+      "explanation": "A margin call occurs when the value of securities in a margin account falls below the minimum maintenance requirement. The broker demands the investor deposit additional funds or securities.",
+      "explanation_ru": "Маржин-колл происходит, когда стоимость ценных бумаг на маржинальном счете падает ниже минимального требования поддержки. Брокер требует, чтобы инвестор внес дополнительные средства или ценные бумаги.",
+      "difficulty": 2
+    },
+    {
+      "id": "q039",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is the difference between a Traditional IRA and a Roth IRA?",
+      "question_ru": "В чем разница между Traditional IRA и Roth IRA?",
+      "options": [
+        "Traditional IRA has tax deductions now; Roth IRA has tax-free withdrawals in retirement",
+        "Roth IRA has tax deductions now; Traditional IRA has tax-free withdrawals",
+        "There is no difference",
+        "Traditional IRA is for stocks; Roth IRA is for bonds"
+      ],
+      "correct_answer": 0,
+      "explanation": "Traditional IRA offers tax deductions on contributions now, but withdrawals in retirement are taxed. Roth IRA contributions are made with after-tax dollars, but qualified withdrawals in retirement are tax-free.",
+      "explanation_ru": "Traditional IRA предлагает налоговые вычеты на взносы сейчас, но выплаты при выходе на пенсию облагаются налогом. Взносы Roth IRA делаются из денег после уплаты налогов, но квалифицированные выплаты при выходе на пенсию не облагаются налогом.",
+      "difficulty": 2
+    },
+    {
+      "id": "q040",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is market manipulation?",
+      "question_ru": "Что такое манипулирование рынком?",
+      "options": [
+        "Legal trading strategies to maximize profits",
+        "Illegal activities that create false or misleading impressions of market activity",
+        "Government regulation of markets",
+        "Normal market volatility"
+      ],
+      "correct_answer": 1,
+      "explanation": "Market manipulation involves illegal activities like pump-and-dump schemes, painting the tape, or spreading false information to artificially affect security prices.",
+      "explanation_ru": "Манипулирование рынком включает незаконную деятельность, такую как схемы pump-and-dump, painting the tape или распространение ложной информации для искусственного влияния на цены ценных бумаг.",
+      "difficulty": 1
+    },
+    {
+      "id": "q041",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is a 'pump and dump' scheme?",
+      "question_ru": "Что такое схема 'pump and dump'?",
+      "options": [
+        "A legitimate investment strategy",
+        "Spreading false information to inflate stock price, then selling at the inflated price",
+        "A type of market order",
+        "A government intervention in markets"
+      ],
+      "correct_answer": 1,
+      "explanation": "Pump and dump is a fraudulent scheme where perpetrators spread false or misleading information to inflate a stock's price, then sell their shares at the inflated price before the price crashes.",
+      "explanation_ru": "Pump and dump — это мошенническая схема, где злоумышленники распространяют ложную или вводящую в заблуждение информацию для завышения цены акции, затем продают свои акции по завышенной цене до того, как цена упадет.",
+      "difficulty": 1
+    },
+    {
+      "id": "q042",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the main purpose of the SEC?",
+      "question_ru": "Какова основная цель SEC?",
+      "options": [
+        "To guarantee investment profits",
+        "To protect investors and maintain fair markets",
+        "To set interest rates",
+        "To collect taxes"
+      ],
+      "correct_answer": 1,
+      "explanation": "The SEC's mission is to protect investors, maintain fair, orderly, and efficient markets, and facilitate capital formation.",
+      "explanation_ru": "Миссия SEC — защищать инвесторов, поддерживать справедливые, упорядоченные и эффективные рынки и содействовать формированию капитала.",
+      "difficulty": 1
+    },
+    {
+      "id": "q043",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What exams does FINRA administer?",
+      "question_ru": "Какие экзамены проводит FINRA?",
+      "options": [
+        "Only the SIE exam",
+        "SIE, Series 7, and other qualification exams",
+        "Only state licensing exams",
+        "College entrance exams"
+      ],
+      "correct_answer": 1,
+      "explanation": "FINRA administers various qualification exams including the SIE (Securities Industry Essentials), Series 7 (General Securities Representative), and many other specialized exams.",
+      "explanation_ru": "FINRA проводит различные квалификационные экзамены, включая SIE (Основы индустрии ценных бумаг), Series 7 (Представитель по общим ценным бумагам) и многие другие специализированные экзамены.",
+      "difficulty": 1
+    },
+    {
+      "id": "q044",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_2",
+      "question": "What is Form U4?",
+      "question_ru": "Что такое Form U4?",
+      "options": [
+        "A tax form for investors",
+        "The uniform application for securities industry registration",
+        "A form for reporting insider trading",
+        "A customer complaint form"
+      ],
+      "correct_answer": 1,
+      "explanation": "Form U4 (Uniform Application for Securities Industry Registration) is used to register individuals with FINRA, SEC, and state regulators. It includes background information and disclosure questions.",
+      "explanation_ru": "Form U4 (Единое заявление для регистрации в индустрии ценных бумаг) используется для регистрации физических лиц в FINRA, SEC и регуляторах штатов. Оно включает информацию о биографии и вопросы о раскрытии информации.",
+      "difficulty": 2
+    },
+    {
+      "id": "q045",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What is the maximum SIPC coverage per customer?",
+      "question_ru": "Каково максимальное покрытие SIPC на клиента?",
+      "options": [
+        "$100,000",
+        "$250,000",
+        "$500,000",
+        "$1,000,000"
+      ],
+      "correct_answer": 2,
+      "explanation": "SIPC provides coverage up to $500,000 per customer, including up to $250,000 for cash claims. This protects customers if their broker-dealer becomes insolvent.",
+      "explanation_ru": "SIPC предоставляет покрытие до $500,000 на клиента, включая до $250,000 для денежных требований. Это защищает клиентов, если их брокер-дилер становится неплатежеспособным.",
+      "difficulty": 2
+    }
+  ]
+}

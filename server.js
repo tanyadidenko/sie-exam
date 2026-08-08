@@ -414,7 +414,10 @@ app.get('/api/theory', (req, res) => {
         name: t.name,
         name_ru: t.name_ru,
         weight: t.weight,
-        overview: t.theory.overview
+        theory: {
+          overview_en: t.theory.overview_en,
+          overview_ru: t.theory.overview_ru
+        }
       })));
     }
   } catch (error) {
@@ -530,6 +533,7 @@ app.get('/api/terms-review', (req, res) => {
       return res.status(401).json({ error: 'Invalid token' });
     }
 
+    // Get terms due for review (next_review <= today)
     const termsDue = db.prepare(`
       SELECT tp.term_id, gt.term, gt.term_ru, gt.definition, gt.definition_ru
       FROM term_progress tp
@@ -539,20 +543,42 @@ app.get('/api/terms-review', (req, res) => {
       LIMIT ?
     `).all(user.id, parseInt(limit));
 
+    // If no terms due for review, get new terms not yet studied
     if (termsDue.length === 0) {
       const newTerms = db.prepare(`
-        SELECT id as term_id, term, term_ru, definition, definition_ru
-        FROM glossary_terms
-        WHERE id NOT IN (SELECT term_id FROM term_progress WHERE user_id = ?)
+        SELECT gt.id as term_id, gt.term, gt.term_ru, gt.definition, gt.definition_ru
+        FROM glossary_terms gt
+        WHERE gt.id NOT IN (SELECT term_id FROM term_progress WHERE user_id = ?)
         ORDER BY RANDOM()
         LIMIT ?
       `).all(user.id, parseInt(limit));
+      
       res.json(newTerms);
     } else {
       res.json(termsDue);
     }
   } catch (error) {
     console.error('Terms review error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Get all terms for study (new endpoint)
+app.get('/api/terms-study', (req, res) => {
+  try {
+    const { topic_id, limit = 20 } = req.query;
+    
+    let terms = glossaryData.terms;
+    
+    if (topic_id) {
+      terms = terms.filter(t => t.topic_id === topic_id);
+    }
+    
+    // Return random subset
+    const shuffled = terms.sort(() => 0.5 - Math.random());
+    res.json(shuffled.slice(0, parseInt(limit)));
+  } catch (error) {
+    console.error('Terms study error:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
