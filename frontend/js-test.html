@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <h1>JavaScript Test</h1>
+    <div id="status">Loading...</div>
+    <button onclick="testFunction()">Click Me</button>
+    <div id="result"></div>
+    
+    <script>
+        document.getElementById('status').textContent = 'JavaScript loaded!';
+        
+        function testFunction() {
+            document.getElementById('result').textContent = 'Button works! Time: ' + new Date().toLocaleTimeString();
+        }
+        
+        // Test API
+        fetch('api/topics')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('result').innerHTML += '<br>API works! Topics: ' + data.length;
+            })
+            .catch(err => {
+                document.getElementById('result').innerHTML += '<br>API error: ' + err.message;
+            });
+    </script>
+</body>
+</html>
