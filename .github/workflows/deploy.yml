@@ -1,0 +1,26 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Deploy to VPS
+      uses: appleboy/ssh-action@master
+      with:
+        host: 185.11.246.168
+        username: root
+        password: ${{ secrets.VPS_PASSWORD }}
+        script: |
+          cd /opt/didenko/sie-exam
+          git pull origin master
+          docker-compose build
+          docker-compose up -d
+          docker ps | grep sie-exam
