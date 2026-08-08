@@ -1,0 +1,361 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is the primary market?",
+      "question_ru": "Что такое первичный рынок?",
+      "options": [
+        "A market where securities are traded between investors",
+        "A market where new securities are issued and sold for the first time",
+        "A market for trading options and futures",
+        "A market for foreign exchange"
+      ],
+      "correct_answer": 1,
+      "explanation": "The primary market is where new securities are issued and sold for the first time. Companies raise capital by selling stocks or bonds directly to investors.",
+      "explanation_ru": "Первичный рынок — это рынок, где новые ценные бумаги выпускаются и продаются впервые. Компании привлекают капитал, продавая акции или облигации напрямую инвесторам.",
+      "difficulty": 1
+    },
+    {
+      "id": "q002",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_1",
+      "question": "What is the secondary market?",
+      "question_ru": "Что такое вторичный рынок?",
+      "options": [
+        "A market where new securities are issued",
+        "A market where existing securities are traded between investors",
+        "A market for government bonds only",
+        "A market for initial public offerings"
+      ],
+      "correct_answer": 1,
+      "explanation": "The secondary market is where existing securities are traded between investors after the initial issuance. Examples include NYSE and NASDAQ.",
+      "explanation_ru": "Вторичный рынок — это рынок, где существующие ценные бумаги торгуются между инвесторами после первичного выпуска. Примеры включают NYSE и NASDAQ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q003",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_2",
+      "question": "What is a broker-dealer?",
+      "question_ru": "Что такое брокер-дилер?",
+      "options": [
+        "A person who only executes trades for clients",
+        "A firm that acts as both agent (broker) and principal (dealer) in securities transactions",
+        "A government regulator of securities markets",
+        "A company that only issues stocks"
+      ],
+      "correct_answer": 1,
+      "explanation": "A broker-dealer is a firm that acts as both broker (agent executing trades for clients) and dealer (principal trading for its own account).",
+      "explanation_ru": "Брокер-дилер — это фирма, которая действует как брокер (агент, выполняющий сделки для клиентов) и как дилер (принципал, торгующий для собственного счета).",
+      "difficulty": 2
+    },
+    {
+      "id": "q004",
+      "topic_id": "topic_1",
+      "subtopic_id": "topic_1_3",
+      "question": "What does the Federal Reserve do during an economic recession?",
+      "question_ru": "Что делает Федеральная резервная система во время экономического спада?",
+      "options": [
+        "Raises interest rates to slow down the economy",
+        "Lowers interest rates to stimulate economic growth",
+        "Increases taxes on corporations",
+        "Reduces government spending"
+      ],
+      "correct_answer": 1,
+      "explanation": "During a recession, the Fed typically lowers interest rates (expansionary monetary policy) to make borrowing cheaper and stimulate economic growth.",
+      "explanation_ru": "Во время рецессии ФРС обычно снижает процентные ставки (экспансионистская денежная политика), чтобы сделать заимствования дешевле и стимулировать экономический рост.",
+      "difficulty": 2
+    },
+    {
+      "id": "q005",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is common stock?",
+      "question_ru": "Что такое обыкновенная акция?",
+      "options": [
+        "A security that represents ownership in a corporation with voting rights",
+        "A debt instrument with fixed interest payments",
+        "A contract that gives the right to buy stock at a specific price",
+        "A share in a mutual fund"
+      ],
+      "correct_answer": 0,
+      "explanation": "Common stock represents ownership in a corporation and typically includes voting rights. Shareholders may receive dividends and benefit from capital appreciation.",
+      "explanation_ru": "Обыкновенная акция представляет собой долю собственности в корпорации и обычно включает право голоса. Акционеры могут получать дивиденды и выгоду от роста капитала.",
+      "difficulty": 1
+    },
+    {
+      "id": "q006",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_1",
+      "question": "What is preferred stock?",
+      "question_ru": "Что такое привилегированная акция?",
+      "options": [
+        "Stock with voting rights and variable dividends",
+        "Stock that pays fixed dividends and has priority over common stock in liquidation",
+        "Stock that can only be sold to institutional investors",
+        "Stock that guarantees a return of principal"
+      ],
+      "correct_answer": 1,
+      "explanation": "Preferred stock pays fixed dividends and has priority over common stock in dividend payments and liquidation. It typically does not have voting rights.",
+      "explanation_ru": "Привилегированная акция выплачивает фиксированные дивиденды и имеет приоритет перед обыкновенной акцией при выплате дивидендов и ликвидации. Обычно не имеет права голоса.",
+      "difficulty": 2
+    },
+    {
+      "id": "q007",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is a bond?",
+      "question_ru": "Что такое облигация?",
+      "options": [
+        "An equity security representing ownership",
+        "A debt instrument where the issuer promises to pay interest and return principal",
+        "A derivative contract based on stock price",
+        "A share in a real estate investment trust"
+      ],
+      "correct_answer": 1,
+      "explanation": "A bond is a debt instrument where the issuer (borrower) promises to pay periodic interest (coupon) and return the principal (face value) at maturity.",
+      "explanation_ru": "Облигация — это долговой инструмент, где эмитент (заемщик) обещает выплачивать периодические проценты (купон) и вернуть основную сумму (номинальную стоимость) при погашении.",
+      "difficulty": 1
+    },
+    {
+      "id": "q008",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_2",
+      "question": "What is the relationship between bond prices and interest rates?",
+      "question_ru": "Какова взаимосвязь между ценами облигаций и процентными ставками?",
+      "options": [
+        "They move in the same direction",
+        "They move in opposite directions",
+        "They are not related",
+        "Bond prices always equal interest rates"
+      ],
+      "correct_answer": 1,
+      "explanation": "Bond prices and interest rates move in opposite directions. When interest rates rise, existing bond prices fall, and vice versa.",
+      "explanation_ru": "Цены облигаций и процентные ставки движутся в противоположных направлениях. Когда процентные ставки растут, цены существующих облигаций падают, и наоборот.",
+      "difficulty": 2
+    },
+    {
+      "id": "q009",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is a call option?",
+      "question_ru": "Что такое опцион колл?",
+      "options": [
+        "The right to sell an asset at a specific price",
+        "The right to buy an asset at a specific price",
+        "The obligation to buy an asset at a specific price",
+        "The obligation to sell an asset at a specific price"
+      ],
+      "correct_answer": 1,
+      "explanation": "A call option gives the buyer the right (but not the obligation) to buy an underlying asset at a specified price (strike price) within a specified time period.",
+      "explanation_ru": "Опцион колл дает покупателю право (но не обязательство) купить базовый актив по указанной цене (страйк) в течение определенного периода времени.",
+      "difficulty": 2
+    },
+    {
+      "id": "q010",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_3",
+      "question": "What is a put option?",
+      "question_ru": "Что такое опцион пут?",
+      "options": [
+        "The right to buy an asset at a specific price",
+        "The right to sell an asset at a specific price",
+        "The obligation to buy an asset at a specific price",
+        "The obligation to sell an asset at a specific price"
+      ],
+      "correct_answer": 1,
+      "explanation": "A put option gives the buyer the right (but not the obligation) to sell an underlying asset at a specified price (strike price) within a specified time period.",
+      "explanation_ru": "Опцион пут дает покупателю право (но не обязательство) продать базовый актив по указанной цене (страйк) в течение определенного периода времени.",
+      "difficulty": 2
+    },
+    {
+      "id": "q011",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is a mutual fund?",
+      "question_ru": "Что такое взаимный фонд?",
+      "options": [
+        "A single stock issued by a corporation",
+        "An investment company that pools money from many investors to buy a diversified portfolio",
+        "A government bond with guaranteed returns",
+        "A type of insurance contract"
+      ],
+      "correct_answer": 1,
+      "explanation": "A mutual fund is an investment company that pools money from many investors to purchase a diversified portfolio of securities. Investors buy shares of the fund.",
+      "explanation_ru": "Взаимный фонд — это инвестиционная компания, которая объединяет деньги многих инвесторов для покупки диверсифицированного портфеля ценных бумаг. Инвесторы покупают доли фонда.",
+      "difficulty": 1
+    },
+    {
+      "id": "q012",
+      "topic_id": "topic_2",
+      "subtopic_id": "topic_2_4",
+      "question": "What is an ETF (Exchange-Traded Fund)?",
+      "question_ru": "Что такое ETF (биржевой фонд)?",
+      "options": [
+        "A fund that can only be bought directly from the fund company",
+        "A fund that trades on an exchange like a stock throughout the day",
+        "A fund that only invests in government bonds",
+        "A fund that guarantees a minimum return"
+      ],
+      "correct_answer": 1,
+      "explanation": "An ETF is a fund that trades on an exchange like a stock. It can be bought and sold throughout the trading day at market prices, unlike mutual funds which are priced once daily.",
+      "explanation_ru": "ETF — это фонд, который торгуется на бирже как акция. Его можно покупать и продавать в течение торгового дня по рыночным ценам, в отличие от взаимных фондов, которые оцениваются один раз в день.",
+      "difficulty": 2
+    },
+    {
+      "id": "q013",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a market order?",
+      "question_ru": "Что такое рыночный ордер?",
+      "options": [
+        "An order to buy or sell at a specific price",
+        "An order to buy or sell immediately at the best available price",
+        "An order that is only valid for one day",
+        "An order to buy or sell only if the price reaches a certain level"
+      ],
+      "correct_answer": 1,
+      "explanation": "A market order is an order to buy or sell a security immediately at the best available current price. It guarantees execution but not price.",
+      "explanation_ru": "Рыночный ордер — это приказ на покупку или продажу ценной бумаги немедленно по лучшей доступной текущей цене. Он гарантирует исполнение, но не цену.",
+      "difficulty": 1
+    },
+    {
+      "id": "q014",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_1",
+      "question": "What is a limit order?",
+      "question_ru": "Что такое лимитный ордер?",
+      "options": [
+        "An order to buy or sell immediately at market price",
+        "An order to buy or sell at a specific price or better",
+        "An order that can only be placed by institutional investors",
+        "An order that expires after one hour"
+      ],
+      "correct_answer": 1,
+      "explanation": "A limit order is an order to buy or sell a security at a specific price or better. It guarantees price but not execution.",
+      "explanation_ru": "Лимитный ордер — это приказ на покупку или продажу ценной бумаги по определенной цене или лучше. Он гарантирует цену, но не исполнение.",
+      "difficulty": 1
+    },
+    {
+      "id": "q015",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_2",
+      "question": "What is a margin account?",
+      "question_ru": "Что такое маржинальный счет?",
+      "options": [
+        "An account that only allows cash transactions",
+        "An account that allows borrowing money from the broker to purchase securities",
+        "An account for retirement savings only",
+        "An account that prohibits short selling"
+      ],
+      "correct_answer": 1,
+      "explanation": "A margin account allows investors to borrow money from their broker to purchase securities. This enables leverage but also increases risk.",
+      "explanation_ru": "Маржинальный счет позволяет инвесторам занимать деньги у брокера для покупки ценных бумаг. Это позволяет использовать кредитное плечо, но также увеличивает риск.",
+      "difficulty": 2
+    },
+    {
+      "id": "q016",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_3",
+      "question": "What is the standard settlement period for most securities transactions?",
+      "question_ru": "Какой стандартный период расчетов для большинства сделок с ценными бумагами?",
+      "options": [
+        "T+0 (same day)",
+        "T+1 (one business day)",
+        "T+2 (two business days)",
+        "T+5 (five business days)"
+      ],
+      "correct_answer": 2,
+      "explanation": "The standard settlement period for most securities transactions is T+2 (trade date plus two business days). This is when the buyer must pay and the seller must deliver the securities.",
+      "explanation_ru": "Стандартный период расчетов для большинства сделок с ценными бумагами составляет T+2 (дата сделки плюс два рабочих дня). Это когда покупатель должен заплатить, а продавец должен поставить ценные бумаги.",
+      "difficulty": 2
+    },
+    {
+      "id": "q017",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is insider trading?",
+      "question_ru": "Что такое инсайдерская торговля?",
+      "options": [
+        "Trading by anyone inside a brokerage firm",
+        "Trading based on material non-public information",
+        "Trading only in domestic securities",
+        "Trading by company executives with proper disclosure"
+      ],
+      "correct_answer": 1,
+      "explanation": "Insider trading is the illegal practice of trading securities based on material non-public information. It violates securities laws and is subject to severe penalties.",
+      "explanation_ru": "Инсайдерская торговля — это незаконная практика торговли ценными бумагами на основе существенной непубличной информации. Она нарушает законы о ценных бумагах и подлежит суровым наказаниям.",
+      "difficulty": 1
+    },
+    {
+      "id": "q018",
+      "topic_id": "topic_3",
+      "subtopic_id": "topic_3_4",
+      "question": "What is churning?",
+      "question_ru": "Что такое чарнинг (чрезмерная торговля)?",
+      "options": [
+        "Trading in agricultural commodities",
+        "Excessive trading by a broker to generate commissions",
+        "Trading only in volatile markets",
+        "Trading by institutional investors"
+      ],
+      "correct_answer": 1,
+      "explanation": "Churning is the unethical practice of a broker executing excessive trades in a customer's account primarily to generate commissions, without regard to the customer's investment objectives.",
+      "explanation_ru": "Чарнинг — это неэтичная практика брокера, выполняющего чрезмерное количество сделок на счете клиента преимущественно для получения комиссионных, без учета инвестиционных целей клиента.",
+      "difficulty": 2
+    },
+    {
+      "id": "q019",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is the SEC?",
+      "question_ru": "Что такое SEC?",
+      "options": [
+        "Securities Exchange Commission — a self-regulatory organization",
+        "Securities and Exchange Commission — a federal agency that regulates securities markets",
+        "Stock Exchange Council — a private organization",
+        "Securities Enforcement Committee — a state agency"
+      ],
+      "correct_answer": 1,
+      "explanation": "The SEC (Securities and Exchange Commission) is a federal agency that regulates the securities industry, including stock exchanges, broker-dealers, and investment advisors.",
+      "explanation_ru": "SEC (Комиссия по ценным бумагам и биржам) — это федеральное агентство, которое регулирует индустрию ценных бумаг, включая фондовые биржи, брокеров-дилеров и инвестиционных консультантов.",
+      "difficulty": 1
+    },
+    {
+      "id": "q020",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_1",
+      "question": "What is FINRA?",
+      "question_ru": "Что такое FINRA?",
+      "options": [
+        "Federal Investment Regulatory Agency",
+        "Financial Industry Regulatory Authority — a self-regulatory organization for broker-dealers",
+        "Financial Investment and Retirement Association",
+        "Federal Insurance and Risk Administration"
+      ],
+      "correct_answer": 1,
+      "explanation": "FINRA (Financial Industry Regulatory Authority) is a self-regulatory organization (SRO) that regulates broker-dealers and their registered representatives in the United States.",
+      "explanation_ru": "FINRA (Управление по регулированию финансовой индустрии) — это саморегулируемая организация (SRO), которая регулирует брокеров-дилеров и их зарегистрированных представителей в США.",
+      "difficulty": 1
+    },
+    {
+      "id": "q021",
+      "topic_id": "topic_4",
+      "subtopic_id": "topic_4_3",
+      "question": "What does SIPC protect?",
+      "question_ru": "Что защищает SIPC?",
+      "options": [
+        "Investors against market losses",
+        "Customers against broker-dealer insolvency up to $500,000",
+        "Companies against bankruptcy",
+        "The government against fraud"
+      ],
+      "correct_answer": 1,
+      "explanation": "SIPC (Securities Investor Protection Corporation) protects customers against the insolvency of their broker-dealer, covering up to $500,000 (including $250,000 for cash). It does NOT protect against market losses.",
+      "explanation_ru": "SIPC (Корпорация по защите инвесторов в ценные бумаги) защищает клиентов от несостоятельности их брокера-дилера, покрывая до $500,000 (включая $250,000 наличными). Она НЕ защищает от рыночных убытков.",
+      "difficulty": 2
+    }
+  ]
+}

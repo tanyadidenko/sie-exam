@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b82f6">
+  <title>SIE Exam Trainer</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #1e293b;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .stats-bar {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    .menu {
+      display: grid;
+      gap: 12px;
+    }
+
+    .menu-btn {
+      background: white;
+      border: none;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .menu-btn:active {
+      transform: translateY(0);
+    }
+
+    .menu-btn-icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .menu-btn-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 4px;
+    }
+
+    .menu-btn-desc {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .screen {
+      display: none;
+    }
+
+    .screen.active {
+      display: block;
+    }
+
+    .back-btn {
+      background: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #3b82f6;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .question-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .question-number {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+
+    .question-text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+    }
+
+    .option-btn {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 14px;
+    }
+
+    .option-btn:hover {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .option-btn.correct {
+      border-color: #10b981;
+      background: #d1fae5;
+    }
+
+    .option-btn.incorrect {
+      border-color: #ef4444;
+      background: #fee2e2;
+    }
+
+    .explanation {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 12px;
+      margin-top: 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .next-btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .next-btn:hover {
+      background: #2563eb;
+    }
+
+    .topic-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .topic-btn {
+      background: white;
+      border: none;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: left;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .topic-name {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .topic-progress {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: #e2e8f0;
+      border-radius: 3px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #3b82f6;
+      transition: width 0.3s;
+    }
+
+    .result-card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .result-score {
+      font-size: 48px;
+      font-weight: bold;
+      color: #3b82f6;
+      margin: 16px 0;
+    }
+
+    .result-label {
+      font-size: 16px;
+      color: #64748b;
+      margin-bottom: 24px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: white;
+    }
+
+    .error {
+      background: #fee2e2;
+      border: 1px solid #ef4444;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+      color: #991b1b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Menu Screen -->
+    <div id="menu-screen" class="screen active">
+      <div class="header">
+        <h1>📚 SIE Exam Trainer</h1>
+        <p>Подготовка к экзамену Securities Industry Essentials</p>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-value" id="stat-xp">0</div>
+          <div class="stat-label">XP</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="stat-streak">0</div>
+          <div class="stat-label">Серия</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="stat-questions">0</div>
+          <div class="stat-label">Вопросов</div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <button class="menu-btn" onclick="showTopics()">
+          <div class="menu-btn-icon">🎯</div>
+          <div class="menu-btn-title">Практика по темам</div>
+          <div class="menu-btn-desc">Тренируйтесь по конкретным темам экзамена</div>
+        </button>
+
+        <button class="menu-btn" onclick="startFullTest()">
+          <div class="menu-btn-icon">📝</div>
+          <div class="menu-btn-title">Полный тест</div>
+          <div class="menu-btn-desc">75 вопросов за 105 минут</div>
+        </button>
+
+        <button class="menu-btn" onclick="showMistakes()">
+          <div class="menu-btn-icon">🔄</div>
+          <div class="menu-btn-title">Повторение ошибок</div>
+          <div class="menu-btn-desc">Работа над проблемными вопросами</div>
+        </button>
+
+        <button class="menu-btn" onclick="showStats()">
+          <div class="menu-btn-icon">📊</div>
+          <div class="menu-btn-title">Статистика</div>
+          <div class="menu-btn-desc">Ваш прогресс и достижения</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Topics Screen -->
+    <div id="topics-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div class="header">
+        <h1>Выберите тему</h1>
+      </div>
+      <div class="topic-list" id="topic-list"></div>
+    </div>
+
+    <!-- Practice Screen -->
+    <div id="practice-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div id="practice-content"></div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+      <div class="result-card">
+        <h2>Тест завершён!</h2>
+        <div class="result-score" id="result-score">0%</div>
+        <div class="result-label" id="result-label"></div>
+        <button class="next-btn" onclick="showMenu()">В главное меню</button>
+      </div>
+    </div>
+
+    <!-- Stats Screen -->
+    <div id="stats-screen" class="screen">
+      <button class="back-btn" onclick="showMenu()">← Назад</button>
+      <div class="header">
+        <h1>📊 Статистика</h1>
+      </div>
+      <div id="stats-content"></div>
+    </div>
+  </div>
+
+  <script>
+    // State
+    let currentUser = null;
+    let currentQuestions = [];
+    let currentQuestionIndex = 0;
+    let correctAnswers = 0;
+    let currentTopic = null;
+
+    // API helpers
+    async function apiGet(url) {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.json();
+      } catch (error) {
+        console.error('API GET error:', error);
+        return null;
+      }
+    }
+
+    async function apiPost(url, data) {
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.json();
+      } catch (error) {
+        console.error('API POST error:', error);
+        return null;
+      }
+    }
+
+    // Screen navigation
+    function showScreen(screenId) {
+      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+      document.getElementById(screenId).classList.add('active');
+    }
+
+    function showMenu() {
+      showScreen('menu-screen');
+      loadStats();
+    }
+
+    async function showTopics() {
+      showScreen('topics-screen');
+      const topics = await apiGet('/api/topics');
+      if (!topics) {
+        document.getElementById('topic-list').innerHTML = '<div class="error">Не удалось загрузить темы</div>';
+        return;
+      }
+
+      const topicList = document.getElementById('topic-list');
+      topicList.innerHTML = topics.map(topic => `
+        <button class="topic-btn" onclick="startTopicPractice('${topic.id}')">
+          <div class="topic-name">${topic.name_ru}</div>
+          <div class="topic-progress">${topic.name} (${topic.weight}%)</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+        </button>
+      `).join('');
+    }
+
+    async function startTopicPractice(topicId) {
+      currentTopic = topicId;
+      const questions = await apiGet(`/api/questions?topic_id=${topicId}&limit=10`);
+      if (!questions || questions.length === 0) {
+        alert('Вопросы не найдены');
+        return;
+      }
+      currentQuestions = questions;
+      currentQuestionIndex = 0;
+      correctAnswers = 0;
+      showScreen('practice-screen');
+      showQuestion();
+    }
+
+    async function startFullTest() {
+      const questions = await apiGet('/api/questions?limit=75');
+      if (!questions || questions.length === 0) {
+        alert('Вопросы не найдены');
+        return;
+      }
+      currentQuestions = questions;
+      currentQuestionIndex = 0;
+      correctAnswers = 0;
+      showScreen('practice-screen');
+      showQuestion();
+    }
+
+    async function showMistakes() {
+      const questions = await apiGet('/api/mistakes?limit=10');
+      if (!questions || questions.length === 0) {
+        alert('У вас пока нет ошибок для повторения');
+        return;
+      }
+      currentQuestions = questions;
+      currentQuestionIndex = 0;
+      correctAnswers = 0;
+      showScreen('practice-screen');
+      showQuestion();
+    }
+
+    function showQuestion() {
+      if (currentQuestionIndex >= currentQuestions.length) {
+        showResult();
+        return;
+      }
+
+      const question = currentQuestions[currentQuestionIndex];
+      const content = document.getElementById('practice-content');
+      content.innerHTML = `
+        <div class="question-card">
+          <div class="question-number">Вопрос ${currentQuestionIndex + 1} из ${currentQuestions.length}</div>
+          <div class="question-text">${question.question}</div>
+          <div class="options">
+            ${question.options.map((option, idx) => `
+              <button class="option-btn" onclick="selectAnswer(${idx})">${option}</button>
+            `).join('')}
+          </div>
+          <div id="explanation" style="display: none;"></div>
+          <button id="next-btn" class="next-btn" style="display: none;" onclick="nextQuestion()">Следующий вопрос</button>
+        </div>
+      `;
+    }
+
+    async function selectAnswer(answerIndex) {
+      const question = currentQuestions[currentQuestionIndex];
+      const isCorrect = answerIndex === question.correct_answer;
+
+      // Disable all options
+      document.querySelectorAll('.option-btn').forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === question.correct_answer) {
+          btn.classList.add('correct');
+        } else if (idx === answerIndex && !isCorrect) {
+          btn.classList.add('incorrect');
+        }
+      });
+
+      // Show explanation
+      const explanation = document.getElementById('explanation');
+      explanation.innerHTML = `
+        <div class="explanation">
+          <strong>${isCorrect ? '✅ Правильно!' : ' Неправильно'}</strong><br>
+          ${question.explanation}
+        </div>
+      `;
+      explanation.style.display = 'block';
+
+      // Save progress
+      await apiPost('/api/progress', {
+        question_id: question.id,
+        answer_index: answerIndex,
+        is_correct: isCorrect
+      });
+
+      if (isCorrect) correctAnswers++;
+
+      // Show next button
+      document.getElementById('next-btn').style.display = 'block';
+    }
+
+    function nextQuestion() {
+      currentQuestionIndex++;
+      showQuestion();
+    }
+
+    function showResult() {
+      const percentage = Math.round((correctAnswers / currentQuestions.length) * 100);
+      document.getElementById('result-score').textContent = `${percentage}%`;
+      document.getElementById('result-label').textContent =
+        percentage >= 70 ? '✅ Отличный результат! Вы готовы к экзамену!' : '📚 Продолжайте тренироваться';
+      showScreen('result-screen');
+    }
+
+    async function showStats() {
+      showScreen('stats-screen');
+      const stats = await apiGet('/api/stats');
+      const content = document.getElementById('stats-content');
+
+      if (!stats) {
+        content.innerHTML = '<div class="error">Не удалось загрузить статистику</div>';
+        return;
+      }
+
+      content.innerHTML = `
+        <div class="question-card">
+          <h3>Общая статистика</h3>
+          <p>Всего вопросов: ${stats.total_questions || 0}</p>
+          <p>Правильных ответов: ${stats.correct_answers || 0}</p>
+          <p>Точность: ${stats.accuracy || 0}%</p>
+          <p>XP: ${stats.xp || 0}</p>
+          <p>Серия дней: ${stats.streak || 0}</p>
+        </div>
+      `;
+    }
+
+    async function loadStats() {
+      const stats = await apiGet('/api/stats');
+      if (stats) {
+        document.getElementById('stat-xp').textContent = stats.xp || 0;
+        document.getElementById('stat-streak').textContent = stats.streak || 0;
+        document.getElementById('stat-questions').textContent = stats.total_questions || 0;
+      }
+    }
+
+    // Initialize
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+
+    loadStats();
+  </script>
+</body>
+</html>

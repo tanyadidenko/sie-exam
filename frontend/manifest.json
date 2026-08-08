@@ -1,0 +1,17 @@
+{
+  "name": "SIE Exam Trainer",
+  "short_name": "SIE Trainer",
+  "description": "Подготовка к экзамену SIE (Securities Industry Essentials)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

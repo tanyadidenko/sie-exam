@@ -1,0 +1,18 @@
+services:
+  sie-exam:
+    build: .
+    container_name: sie-exam
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "3008:3008"
+    volumes:
+      - ./data:/app/data
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
+    name: didenko_app-network

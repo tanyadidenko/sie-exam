@@ -1,0 +1,64 @@
+{
+  "daily_goals": [
+    {
+      "id": "goal_01",
+      "name": "Practice 10 Questions",
+      "name_ru": "Практика 10 вопросов",
+      "description": "Answer 10 practice questions",
+      "description_ru": "Ответьте на 10 тренировочных вопросов",
+      "xp_reward": 10,
+      "condition": {
+        "type": "questions_answered",
+        "value": 10
+      }
+    },
+    {
+      "id": "goal_02",
+      "name": "Practice 25 Questions",
+      "name_ru": "Практика 25 вопросов",
+      "description": "Answer 25 practice questions",
+      "description_ru": "Ответьте на 25 тренировочных вопросов",
+      "xp_reward": 25,
+      "condition": {
+        "type": "questions_answered",
+        "value": 25
+      }
+    },
+    {
+      "id": "goal_03",
+      "name": "Full Practice Test",
+      "name_ru": "Полный тренировочный тест",
+      "description": "Complete a full 75-question practice test",
+      "description_ru": "Пройдите полный тренировочный тест из 75 вопросов",
+      "xp_reward": 100,
+      "condition": {
+        "type": "full_test_completed",
+        "value": 1
+      }
+    },
+    {
+      "id": "goal_04",
+      "name": "Review Mistakes",
+      "name_ru": "Повторение ошибок",
+      "description": "Review 5 previously missed questions",
+      "description_ru": "Повторите 5 ранее пропущенных вопросов",
+      "xp_reward": 15,
+      "condition": {
+        "type": "mistakes_reviewed",
+        "value": 5
+      }
+    },
+    {
+      "id": "goal_05",
+      "name": "Maintain Streak",
+      "name_ru": "Поддержание серии",
+      "description": "Practice for at least 1 day in your streak",
+      "description_ru": "Тренируйтесь хотя бы 1 день в вашей серии",
+      "xp_reward": 5,
+      "condition": {
+        "type": "streak_maintained",
+        "value": 1
+      }
+    }
+  ]
+}

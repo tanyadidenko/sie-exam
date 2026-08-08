@@ -1,0 +1,134 @@
+{
+  "achievements": [
+    {
+      "id": "ach_01",
+      "name": "First Step",
+      "name_ru": "Первый шаг",
+      "description": "Complete your first practice session",
+      "description_ru": "Завершите первую тренировочную сессию",
+      "icon": "🎯",
+      "condition": {
+        "type": "sessions_completed",
+        "value": 1
+      },
+      "xp_reward": 10
+    },
+    {
+      "id": "ach_02",
+      "name": "Knowledge Seeker",
+      "name_ru": "Ищущий знания",
+      "description": "Answer 50 questions correctly",
+      "description_ru": "Правильно ответьте на 50 вопросов",
+      "icon": "📚",
+      "condition": {
+        "type": "correct_answers",
+        "value": 50
+      },
+      "xp_reward": 50
+    },
+    {
+      "id": "ach_03",
+      "name": "Topic Master",
+      "name_ru": "Мастер темы",
+      "description": "Achieve 90% accuracy in any topic",
+      "description_ru": "Достигните 90% точности в любой теме",
+      "icon": "🏆",
+      "condition": {
+        "type": "topic_accuracy",
+        "value": 90
+      },
+      "xp_reward": 100
+    },
+    {
+      "id": "ach_04",
+      "name": "Streak 7",
+      "name_ru": "Серия 7 дней",
+      "description": "Practice for 7 days in a row",
+      "description_ru": "Тренируйтесь 7 дней подряд",
+      "icon": "",
+      "condition": {
+        "type": "streak_days",
+        "value": 7
+      },
+      "xp_reward": 70
+    },
+    {
+      "id": "ach_05",
+      "name": "Streak 30",
+      "name_ru": "Серия 30 дней",
+      "description": "Practice for 30 days in a row",
+      "description_ru": "Тренируйтесь 30 дней подряд",
+      "icon": "🔥🔥🔥",
+      "condition": {
+        "type": "streak_days",
+        "value": 30
+      },
+      "xp_reward": 300
+    },
+    {
+      "id": "ach_06",
+      "name": "Test Taker",
+      "name_ru": "Сдающий тест",
+      "description": "Complete a full practice test (75 questions)",
+      "description_ru": "Пройдите полный тренировочный тест (75 вопросов)",
+      "icon": "📝",
+      "condition": {
+        "type": "full_tests_completed",
+        "value": 1
+      },
+      "xp_reward": 100
+    },
+    {
+      "id": "ach_07",
+      "name": "Perfect Score",
+      "name_ru": "Идеальный результат",
+      "description": "Score 100% on a practice test",
+      "description_ru": "Наберите 100% на тренировочном тесте",
+      "icon": "💯",
+      "condition": {
+        "type": "perfect_test",
+        "value": 1
+      },
+      "xp_reward": 200
+    },
+    {
+      "id": "ach_08",
+      "name": "Question Master",
+      "name_ru": "Мастер вопросов",
+      "description": "Answer 500 questions total",
+      "description_ru": "Ответьте на 500 вопросов всего",
+      "icon": "🎓",
+      "condition": {
+        "type": "total_questions",
+        "value": 500
+      },
+      "xp_reward": 500
+    },
+    {
+      "id": "ach_09",
+      "name": "All Topics",
+      "name_ru": "Все темы",
+      "description": "Practice questions from all 4 main topics",
+      "description_ru": "Практикуйте вопросы по всем 4 основным темам",
+      "icon": "",
+      "condition": {
+        "type": "topics_practiced",
+        "value": 4
+      },
+      "xp_reward": 150
+    },
+    {
+      "id": "ach_10",
+      "name": "Exam Ready",
+      "name_ru": "Готов к экзамену",
+      "description": "Score 70% or higher on 3 consecutive practice tests",
+      "description_ru": "Наберите 70% или выше на 3 последовательных тренировочных тестах",
+      "icon": "✅",
+      "condition": {
+        "type": "consecutive_passing_tests",
+        "value": 3
+      },
+      "xp_reward": 1000
+    }
+  ]
+}

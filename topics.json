@@ -1,0 +1,139 @@
+{
+  "exam_info": {
+    "name": "SIE Exam",
+    "full_name": "Securities Industry Essentials",
+    "organization": "FINRA",
+    "total_questions": 75,
+    "time_limit_minutes": 105,
+    "passing_score": 70,
+    "question_types": ["multiple_choice", "true_false"]
+  },
+  "topics": [
+    {
+      "id": "topic_1",
+      "name": "Knowledge of Capital Markets",
+      "name_ru": "Знание рынков капитала",
+      "weight": 16,
+      "description": "Types of markets, market participants, economic cycles",
+      "subtopics": [
+        {
+          "id": "topic_1_1",
+          "name": "Types of Markets",
+          "name_ru": "Типы рынков",
+          "description": "Primary vs secondary markets, exchanges vs OTC"
+        },
+        {
+          "id": "topic_1_2",
+          "name": "Market Participants",
+          "name_ru": "Участники рынка",
+          "description": "Broker-dealers, investment advisors, institutional investors"
+        },
+        {
+          "id": "topic_1_3",
+          "name": "Economic Factors",
+          "name_ru": "Экономические факторы",
+          "description": "Business cycles, monetary policy, fiscal policy"
+        }
+      ]
+    },
+    {
+      "id": "topic_2",
+      "name": "Understanding Products and Their Risks",
+      "name_ru": "Понимание продуктов и их рисков",
+      "weight": 44,
+      "description": "Equity securities, debt securities, options, investment company products, variable contracts",
+      "subtopics": [
+        {
+          "id": "topic_2_1",
+          "name": "Equity Securities",
+          "name_ru": "Долевые ценные бумаги",
+          "description": "Common stock, preferred stock, ADRs, rights, warrants"
+        },
+        {
+          "id": "topic_2_2",
+          "name": "Debt Securities",
+          "name_ru": "Долговые ценные бумаги",
+          "description": "Bonds, notes, debentures, municipal bonds, mortgage-backed securities"
+        },
+        {
+          "id": "topic_2_3",
+          "name": "Options",
+          "name_ru": "Опционы",
+          "description": "Call options, put options, spreads, strategies"
+        },
+        {
+          "id": "topic_2_4",
+          "name": "Investment Company Products",
+          "name_ru": "Продукты инвестиционных компаний",
+          "description": "Mutual funds, ETFs, REITs, UITs"
+        },
+        {
+          "id": "topic_2_5",
+          "name": "Variable Contracts",
+          "name_ru": "Переменные контракты",
+          "description": "Variable annuities, variable life insurance"
+        }
+      ]
+    },
+    {
+      "id": "topic_3",
+      "name": "Understanding Trading, Customer Accounts, and Prohibited Activities",
+      "name_ru": "Понимание торговли, счетов клиентов и запрещенных действий",
+      "weight": 31,
+      "description": "Order types, account types, settlement, prohibited activities",
+      "subtopics": [
+        {
+          "id": "topic_3_1",
+          "name": "Order Types",
+          "name_ru": "Типы ордеров",
+          "description": "Market orders, limit orders, stop orders, time-in-force"
+        },
+        {
+          "id": "topic_3_2",
+          "name": "Account Types",
+          "name_ru": "Типы счетов",
+          "description": "Cash accounts, margin accounts, retirement accounts"
+        },
+        {
+          "id": "topic_3_3",
+          "name": "Settlement and Clearing",
+          "name_ru": "Расчеты и клиринг",
+          "description": "T+2 settlement, clearing process, delivery"
+        },
+        {
+          "id": "topic_3_4",
+          "name": "Prohibited Activities",
+          "name_ru": "Запрещенные действия",
+          "description": "Insider trading, market manipulation, fraud, churning"
+        }
+      ]
+    },
+    {
+      "id": "topic_4",
+      "name": "Overview of the Regulatory Framework",
+      "name_ru": "Обзор нормативной базы",
+      "weight": 9,
+      "description": "SEC, FINRA, SIPC, self-regulatory organizations",
+      "subtopics": [
+        {
+          "id": "topic_4_1",
+          "name": "Regulatory Organizations",
+          "name_ru": "Регуляторные организации",
+          "description": "SEC, FINRA, SIPC, MSRB, CFTC"
+        },
+        {
+          "id": "topic_4_2",
+          "name": "Registration Requirements",
+          "name_ru": "Требования к регистрации",
+          "description": "Broker-dealer registration, associated persons, exemptions"
+        },
+        {
+          "id": "topic_4_3",
+          "name": "Customer Protection",
+          "name_ru": "Защита клиентов",
+          "description": "SIPC coverage, customer complaints, arbitration"
+        }
+      ]
+    }
+  ]
+}
