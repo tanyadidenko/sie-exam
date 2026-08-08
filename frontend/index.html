@@ -375,6 +375,9 @@
   </div>
 
   <script>
+    // Base path for API requests
+    const BASE_PATH = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+
     // State
     let currentUser = null;
     let currentQuestions = [];
@@ -385,7 +388,8 @@
     // API helpers
     async function apiGet(url) {
       try {
-        const response = await fetch(url);
+        const fullPath = url.startsWith('/') ? BASE_PATH + url.substring(1) : url;
+        const response = await fetch(fullPath);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return await response.json();
       } catch (error) {
@@ -396,7 +400,8 @@
 
     async function apiPost(url, data) {
       try {
-        const response = await fetch(url, {
+        const fullPath = url.startsWith('/') ? BASE_PATH + url.substring(1) : url;
+        const response = await fetch(fullPath, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
