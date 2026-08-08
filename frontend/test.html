@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIE EXAM - JavaScript Test</title>
+</head>
+<body>
+    <h1>JavaScript Test Page</h1>
+    <div id="status">Testing...</div>
+    <button onclick="testAPI()">Test API</button>
+    <div id="result"></div>
+    
+    <script>
+        const BASE_PATH = window.location.pathname.endsWith('/') ? window.location.pathname : window.location.pathname + '/';
+        document.getElementById('status').textContent = 'BASE_PATH: ' + BASE_PATH;
+        
+        async function testAPI() {
+            try {
+                const url = BASE_PATH + 'api/topics';
+                document.getElementById('result').innerHTML = 'Fetching: ' + url + '<br>';
+                const response = await fetch(url);
+                document.getElementById('result').innerHTML += 'Status: ' + response.status + '<br>';
+                const data = await response.json();
+                document.getElementById('result').innerHTML += 'Topics: ' + data.length + '<br>';
+                document.getElementById('result').innerHTML += '<pre>' + JSON.stringify(data[0], null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
