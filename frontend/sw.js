@@ -1,8 +1,8 @@
 const CACHE_NAME = 'sie-exam-v1';
 const urlsToCache = [
-  '/',
-  '/manifest.json',
-  '/icon.svg'
+  './',
+  './manifest.json',
+  './icon.svg'
 ];
 
 self.addEventListener('install', event => {
